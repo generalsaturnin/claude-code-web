@@ -132,3 +132,44 @@ autre backdoor. Ordre de préférence :
   dossier `customizer-polylang-master`).
 - **Le vrai risque est sur le serveur OVH, pas dans le dépôt.** Nettoyer le dépôt
   ne nettoie pas le site en ligne.
+
+---
+
+## 7. Résolution — investigation serveur du 20/07/2026
+
+Investigation menée en SSH sur l'hébergement OVH (`la-crochardiere.fr`).
+
+### Confinement (fait)
+- Mots de passe changés (WordPress, OVH, FTP/SSH, base de données).
+- Salts régénérés dans `wp-config.php` (toutes les sessions coupées).
+
+### Diagnostic (via WP-CLI + grep/find)
+- **Cœur WordPress** : `wp core verify-checksums` → **sain** (aucun fichier de core modifié/injecté).
+- **Extensions** : seul Formidable présente 3 fichiers « ajoutés » (JS/CSS, non-PHP) — probablement légitimes.
+- **Utilisateurs** : un seul compte, `sebastien` (admin légitime). Aucun compte pirate.
+- **Traces C2** (`icw2.xyz` / `icw7.com`) dans le PHP : **aucune**. La backdoor active
+  `lock360.php` était uniquement dans le thème enfant vérolé (déjà supprimé).
+- **Fichiers backdoor par nom** : uniquement des faux positifs légitimes
+  (`wp-admin/about.php`, un `content.php` d'extension MPHB).
+- **mu-plugins / drop-ins (`wp-content/*.php`)** : aucun.
+- **Tâches planifiées (cron)** : toutes légitimes.
+- **Snippets WPCode** : 3 snippets, tous anodins (balise Google, texte, désactivation de commentaires).
+- **PHP dans `uploads/`** : uniquement `uploads/mphb/index.php` (blank légitime).
+
+### Nettoyage effectué
+- Suppression des **~70 fichiers `.htaccess` piégés** (identifiés par leur signature
+  `lock360|wp-l0gin|wp-the1me|wp-scr1pts`) répartis dans `uploads/`, `languages/`,
+  `fonts/`, `themes/`. Vérification post-suppression : 0 restant.
+- Suppression de `wp-xml.php` (fichier étranger, vide) à la racine.
+- Suppression du thème enfant vérolé (`customizer-polylang-master/lock360.php` + `.htaccess` piégés).
+
+### Verdict
+Infection **éradiquée**. Vecteur d'entrée : paquet « customizer-polylang » *nulled*
+installé comme thème enfant, embarquant la backdoor `lock360.php`.
+
+### Reste à faire (durcissement / prévention)
+1. Réinstaller Formidable et le thème Bellevue depuis leurs sources officielles.
+2. Poser un `.htaccess` propre bloquant le PHP dans `wp-content/uploads/`.
+3. `define('DISALLOW_FILE_EDIT', true);` dans `wp-config.php`.
+4. Installer Wordfence + lancer un scan complet (confirmation indépendante).
+5. Mises à jour régulières ; ne plus jamais installer de thème/extension *nulled*.
