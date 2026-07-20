@@ -1,0 +1,16 @@
+/*
+Theme Name:   Bellevue Child
+Theme URI:    https://bellevuetheme.com
+Description:  Thème enfant de Bellevue. TOUTES les personnalisations (CSS, PHP, templates) doivent être faites ici, jamais dans le thème parent « bellevuex ». Ainsi les mises à jour du thème parent n'écrasent plus votre travail.
+Author:       Site OVH
+Template:     bellevuex
+Version:      1.0.0
+Text Domain:  bellevue-child
+*/
+
+/* =========================================================================
+   Vos surcharges CSS viennent ici.
+   Le style.css du parent est déjà chargé automatiquement par le thème
+   (voir bellevuex/lib/scripts.php). Ce fichier est chargé APRÈS, donc vos
+   règles ci-dessous gagnent sans avoir besoin de !important.
+   ========================================================================= */

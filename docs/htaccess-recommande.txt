@@ -1,0 +1,95 @@
+# =============================================================================
+#  .htaccess RECOMMANDÉ pour le site Bellevue sur OVH (Apache)
+# =============================================================================
+#
+#  ⚠️  NE PAS remplacer aveuglément votre .htaccess de production par ce fichier.
+#  Marche à suivre :
+#    1. Sauvegardez votre .htaccess actuel (téléchargez-le, gardez une copie).
+#    2. AJOUTEZ les blocs ci-dessous À LA SUITE de votre .htaccess existant,
+#       SANS toucher à ce qui est entre « # BEGIN WordPress » et « # END WordPress »
+#       (ces lignes-là sont gérées par WordPress).
+#    3. Rechargez le site et vérifiez que tout fonctionne (page d'accueil,
+#       réservation, admin). En cas de page blanche / erreur 500, restaurez la
+#       sauvegarde : c'est presque toujours un module Apache non activé chez OVH.
+#
+#  Gains attendus : temps de chargement réduit (compression + cache navigateur),
+#  meilleurs Core Web Vitals, et durcissement sécurité de base.
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# 1) COMPRESSION GZIP  (réduit fortement le poids des CSS/JS/HTML transférés)
+# -----------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript text/javascript
+    AddOutputFilterByType DEFLATE application/json application/xml application/rss+xml
+    AddOutputFilterByType DEFLATE image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
+</IfModule>
+
+
+# -----------------------------------------------------------------------------
+# 2) CACHE NAVIGATEUR  (les visiteurs qui reviennent ne re-téléchargent pas tout)
+# -----------------------------------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg              "access plus 1 year"
+    ExpiresByType image/png               "access plus 1 year"
+    ExpiresByType image/gif               "access plus 1 year"
+    ExpiresByType image/webp              "access plus 1 year"
+    ExpiresByType image/svg+xml           "access plus 1 year"
+    ExpiresByType image/x-icon            "access plus 1 year"
+    ExpiresByType video/mp4               "access plus 1 year"
+    ExpiresByType font/woff               "access plus 1 year"
+    ExpiresByType font/woff2              "access plus 1 year"
+    ExpiresByType application/x-font-ttf  "access plus 1 year"
+    ExpiresByType text/css                "access plus 1 month"
+    ExpiresByType application/javascript  "access plus 1 month"
+    ExpiresByType text/javascript         "access plus 1 month"
+    ExpiresByType text/html               "access plus 0 seconds"
+</IfModule>
+
+
+# -----------------------------------------------------------------------------
+# 3) EN-TÊTES DE SÉCURITÉ  (protections de base côté navigateur)
+# -----------------------------------------------------------------------------
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    # Décommentez UNIQUEMENT si tout le site est en HTTPS depuis longtemps (1 an de cache imposé) :
+    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    # Retire l'en-tête qui révèle la version de PHP :
+    Header unset X-Powered-By
+</IfModule>
+
+
+# -----------------------------------------------------------------------------
+# 4) PROTECTION DE FICHIERS SENSIBLES
+# -----------------------------------------------------------------------------
+# Bloquer l'accès direct à wp-config.php
+<Files wp-config.php>
+    Require all denied
+</Files>
+
+# Bloquer l'accès aux fichiers de debug / sauvegardes / config oubliés
+<FilesMatch "\.(env|log|sql|bak|old|ini)$">
+    Require all denied
+</FilesMatch>
+
+# Empêcher le listing des répertoires (ex. /wp-content/uploads/ nu)
+Options -Indexes
+
+# Bloquer l'exécution de PHP dans le dossier des uploads (défense anti-upload malveillant)
+<IfModule mod_rewrite.c>
+    RewriteRule ^wp-content/uploads/.*\.php$ - [F,L]
+</IfModule>
+
+
+# -----------------------------------------------------------------------------
+# 5) (OPTIONNEL) Limiter xmlrpc.php — souvent ciblé par des attaques par force brute.
+#     Ne l'activez que si vous n'utilisez PAS l'app mobile WordPress ni Jetpack.
+# -----------------------------------------------------------------------------
+# <Files xmlrpc.php>
+#     Require all denied
+# </Files>

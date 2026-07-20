@@ -1,7 +1,0 @@
-wp-config.php
-*.env
-*.sql
-*.sql.gz
-*.zip
-*.log
-node_modules/

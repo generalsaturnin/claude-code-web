@@ -1,0 +1,36 @@
+# ---- Secrets & config sensibles (NE JAMAIS committer) ----
+wp-config.php
+*.env
+.env*
+
+# ---- Sauvegardes & dumps ----
+*.sql
+*.sql.gz
+*.bak
+*.old
+*.zip
+*.tar
+*.tar.gz
+
+# ---- Logs & debug ----
+*.log
+debug.log
+error_log
+
+# ---- Dépendances / build ----
+node_modules/
+vendor/
+.sass-cache/
+*.css.map
+
+# ---- Fichiers migration Duplicator ----
+installer*.php
+dup-installer/
+original_files_*/
+
+# ---- OS / éditeurs ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
