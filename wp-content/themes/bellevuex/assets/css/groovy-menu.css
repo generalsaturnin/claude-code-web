@@ -1,0 +1,109 @@
+
+/* ==========================================================================
+   Groovy Menu
+   ========================================================================== */
+
+/* Logo */
+
+.gm-navbar .gm-logo img {}
+
+
+/* General */
+
+.gm-navbar a,
+.gm-navbar a:hover,
+.gm-navbar-nav li a,
+.gm-navbar-nav li a:hover,
+.gm-actions a,
+.gm-actions a:hover,
+.gm-minicart a,
+.gm-minicart a:hover {text-decoration:none}
+
+.gm-navbar--style-1 .gm-container {
+    padding-left:30px;
+    padding-right:30px;
+}
+
+
+/* Dropdown menus */
+
+.gm-navbar .gm-dropdown-menu {padding:10px 8px}
+
+.gm-navbar .gm-dropdown-menu .gm-dropdown-toggle span i {text-align:right}
+
+.gm-navbar .gm-dropdown-menu .gm-dropdown-menu {padding:12px 8px}
+
+.gm-navbar .gm-dropdown-menu .gm-dropdown-menu-wrapper {margin-top:-10px}
+
+
+/* Mega menu */
+
+.gm-navbar li.mega-gm-dropdown > .gm-dropdown-menu-wrapper .gm-dropdown-menu {padding:16px 10px}
+
+
+/* Minimal / Sidebar menu */
+
+.gm-navbar--style-3 .gm-main-menu-wrapper .gm-navbar-nav > .gm-menu-item > a {padding:8px 0}
+
+.gm-navbar--style-2 ~ .gm-main-menu-wrapper .gm-menu-item__link,
+.gm-navbar--style-3 .gm-main-menu-wrapper .gm-menu-item__link {
+    padding-top: 8px;
+    padding-bottom:8px;
+}
+
+/* Icon menu */
+
+.gm-navbar--style-4 .gm-navbar-nav > .gm-menu-item > a > .gm-menu-item__txt {padding-left:22px}
+
+
+/* Mobile menu */
+
+.gm-navigation-drawer {padding:25% 14px 14px 14px}
+
+.gm-navigation-drawer .gm-anchor {border-color:transparent}
+
+.gm-navigation-drawer .gm-anchor span i {text-align:right}
+
+
+/* WooCommerce Mini Cart */
+
+.gm-navbar--style-1 .gm-minicart {margin-right:0}
+
+.gm-main-menu-wrapper .gm-minicart .gm-minicart-dropdown {padding:22px}
+
+.gm-main-menu-wrapper .woocommerce-mini-cart__empty-message {margin-bottom:0; padding-bottom:0 !important}
+
+
+/* Accent button */
+
+.gm-navbar ul.gm-navbar-nav li.th-accent,
+.gm-navigation-drawer ul li.th-accent {
+    border:0;
+    margin-top:0;
+    padding-top:0;
+    padding-bottom:0;
+}
+.gm-navbar:not(.gm-navbar--style-3) ul.gm-navbar-nav li.th-accent,
+.gm-navigation-drawer ul li.th-accent {padding:0}
+
+.gm-navbar ul.gm-navbar-nav li.th-btn-white a,
+.gm-navbar ul.gm-navbar-nav li.th-btn-black a {
+    padding:8px 18px;
+    border-radius:50px;
+}
+
+.gm-navbar ul.gm-navbar-nav li.th-btn-white a {border:1px solid rgba(255,255,255,0.8)}
+.gm-navbar ul.gm-navbar-nav li.th-btn-black a {border:1px solid rgba(0,0,0,0.8)}
+
+.gm-navbar--style-3 ul.gm-navbar-nav li.th-btn-white a,
+.gm-navbar--style-3 ul.gm-navbar-nav li.th-btn-black a {text-align:center}
+
+
+/* Full screen search */
+
+.gm-search__fullscreen-container {background-color: rgba(12, 12, 12, 0.98)}
+
+.gm-search__fullscreen-container .gm-search__inner input:focus {
+    border:0 !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.31) !important;
+}

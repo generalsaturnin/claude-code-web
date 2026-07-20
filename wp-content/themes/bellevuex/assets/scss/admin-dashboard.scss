@@ -1,0 +1,1786 @@
+$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88); 
+$green-color: #BAD344;
+$images-path: '../images/';
+@mixin setBgImage($image){
+    background-image: url(#{$images-path}#{$image});  
+}
+
+.thmv-body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(black, 0.1);
+    border-radius: 6px;
+    @media(min-width: 782px){
+        margin: 15px;
+
+    }
+
+    & * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    h1 {
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: 50px;
+    }
+    hr {
+        margin: 60px 0 35px;
+        display: inline-block;
+        width: 100%;
+        border-top: 0;
+        background: rgba(78, 82, 76, 0.1); 
+    }
+    .no_install{
+        opacity: 0.3;
+        cursor: pointer;
+    }
+    .secondary-button{
+        background: transparent!important; 
+        color: #BAD344!important; 
+        border-color: #BAD344!important; 
+        border-radius: 50px!important; 
+        width: 180px!important; 
+        &:hover{
+            color: white!important; 
+            background: #2F2E41!important; 
+        }
+    }
+    .left-bump{
+        padding-left: 15px;
+    }
+    .color{
+        &--success{
+            color: #83B442;
+        }
+        &--error{
+            color: #f00;
+        }
+    }
+    a.update-link{
+        font-weight: 700;
+        font-size: 14px;
+        svg{
+            vertical-align: sub;
+            margin-right: 5px;
+        }
+    }
+    p{
+        &.error-msg, &.success-msg, &.loading{
+            margin: 0;
+            display: none; 
+            padding-left: 15px;
+            margin-top: 10px;
+        }
+        &.error-msg{
+            color: #f00;
+        }
+        &.success-msg{
+            color: #83B442;
+        }
+    }
+    #prompt{
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+        z-index: 5;
+        p{
+            color: white;
+            font-size: 13px;
+        }
+        .prompt-controls{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            a{
+                font-size: 13px;
+                &:hover, &:focus, &:active{
+                    color: rgba($green-color, 0.88); 
+                }
+            }
+        }
+    }
+    /* thmv-dash-welcome */
+    .thmv-dash-welcome,
+    .thmv-dash-started-welcome,
+    .thmv-dash-subscribe,
+    .thmv-dash-registration,
+    .thmv-dash-started,
+    .thmv-dash-three-box,
+    .thmv-dash-health,
+    .thmv-dash-documentation,
+    .thmv-dash-common-questions,
+    .thmv-dash-templates,
+    .thmv-dash-bundled-plugins,
+    .thmv-dash-all-plugins,
+    .thmv-dash-update-all{
+        display: flex;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0px auto;
+        justify-content:center;
+    }
+    .thmv-dash-started-welcome{
+        margin-top: 40px;
+    }
+    .thmv-dash-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin:0px -15px;
+        width:100%;
+    }
+    .thmv-column{
+        flex: 0 0 auto;
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    /*===================*/
+    /* Welcome page */
+    /*===================*/
+    .thmv-dash-welcome .thmv-dash-heading,
+    .thmv-dash-started-welcome .thmv-dash-heading,
+    .thmv-dash-health .thmv-dash-heading{
+        width: 100%;
+        display: block;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        color: #0C1015;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align-last: left;
+        padding:0 15px;
+    }
+    .thmv-dash-update-all a{
+        text-align-last: left;
+        display: block;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .thmv-dash-subscribe .thmv-column-1{
+        flex: 0 0 auto;
+        width: 70%;
+        padding: 0 15px;
+    }
+    .thmv-dash-subscribe .thmv-column-2{
+        flex: 0 0 auto;
+        width: 30%;
+        padding: 0 15px;
+    }
+    .thmv-dash-subscribe .thmv-column-1 .thmv-dash-subscribe_box{
+        border: 1px solid #E3E3E3;
+        border-radius: 10px;
+        @include setBgImage('Email-campaign-img.png');
+        background-repeat: no-repeat;
+        background-position: 95% 70%;
+    }
+    .thmv-dash-subscribe .thmv-column-1 .thmv-dash-col-info{
+        flex: 0 0 auto;
+        width:100%;
+        padding: 30px;
+        max-width:500px;
+        min-height: 333px;
+    }
+    .thmv-dash-title{
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin:10px 0px;
+    }
+    .thmv-dash-paragraph{
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    .thmv-dash-subscribe .thmv-column-1 .thmv-dash-col-info .thmv-dash-paragraph{
+        margin-bottom: 20px;
+    }
+    .thmv_email_form{ 
+        display: flex;
+        align-items: center;
+    }
+    .thmv_email_form input{
+        border: 1px solid #888D944D;
+        padding: 16px;
+        width: 60%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-right: 0;
+    }
+    .thmv_email_form input:focus{
+        outline:none;
+        border-color:#BAD344;
+    }
+    .thmv_email_form input,
+    .thmv_email_form input::placeholder{
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #888D94;
+    }
+    .thmv_email_form button,
+    .thmv-dash-subscribe .thmv-free-download button,
+    .thmv-dash-started .thmv-column-3 .thmv-launch-setup,
+    .thmv-dash-started .thmv-column-3 .thmv-make-request,
+    .thmv-dash-three-box .thmv-dash-three-box-info .thmv-launch-setup,
+    .thmv-dash-health .thmv-dash-col-premium .thmv-renew button,
+    .thmv-dash-documentation .thmv-dash-col-info button,
+    .thmv-dash-common-questions .thmv-dash-questions-box .thmv-view-all,
+    .thmv-dash-common-questions .thmv-dash-questions-box .thmv-openticket-btn,
+    .thmv-dash-templates .thmv-dash-templates-box button,
+    .thmv-dash-welcome button.thmv-addnew-btn{
+        border: 1px solid #BAD344;
+        background: #BAD344;
+        color:#FFFFFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding: 15px;
+        border-radius:50px;
+        transition: all 0.3s;
+    }
+    .thmv_email_form button{
+        width: 25%;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .thmv_email_form button:hover,
+        .thmv-dash-subscribe .thmv-free-download button:hover,
+        .thmv-dash-started .thmv-column-3 .thmv-launch-setup:hover,
+        .thmv-dash-started .thmv-column-3 .thmv-make-request:hover,
+        .thmv-dash-three-box .thmv-dash-three-box-info .thmv-launch-setup:hover,
+        .thmv-dash-health .thmv-dash-col-premium .thmv-renew button:hover,
+        .thmv-dash-documentation .thmv-dash-col-info button:hover,
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-view-all:hover,
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-openticket-btn:hover,
+        .thmv-dash-templates .thmv-dash-templates-box button:hover,
+        .thmv-dash-welcome button.thmv-addnew-btn:hover{
+        background: #2F2E41;
+        color:#FFFFFF;
+        border: 1px solid #2F2E41;
+        cursor: pointer;
+    }
+
+    .thmv-dash-subscribe .thmv-free-download{
+        border-radius: 10px;
+        padding: 30px 20px 49px;
+        @include setBgImage('free-resources-bg.png');
+        background-size: 30%;
+        background-repeat: no-repeat;
+        background-position: 90% 80%;
+        background-color: #F6F6F6;
+    }
+    .thmv-dash-subscribe .thmv-free-download ul{
+        list-style:none;
+    }
+    .thmv-dash-subscribe .thmv-free-download ul li,
+    .thmv-dash-started .thmv-column-3 .thmv-dash-listing  li{
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #0C1015;
+        margin-bottom: 5px;
+        position: relative;
+        margin-left: 25px;
+    }
+    .thmv-dash-subscribe .thmv-free-download ul li,
+    .thmv-dash-started .thmv-column-3 .thmv-dash-listing  li:last-child{
+        margin-bottom: 0;
+    }
+    .thmv-dash-subscribe .thmv-free-download ul li:after,
+        .thmv-dash-started .thmv-column-3 .thmv-dash-listing  li:after,
+        .thmv-dash-common-questions .thmv-column-1 .thmv-dash-listing li:after{
+        content:"";
+        width:5px;
+        height:5px;
+        border-radius:100%;
+        background:#696C6F;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: -15px;
+        transform: translate(-0%, -50%);
+    }
+    .thmv-dash-subscribe .thmv-free-download button{
+        width: 140px;
+        margin-top: 20px;
+    }
+
+    /* registration */
+    .thmv-dash-registration{
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .thmv-dash-registration-box,
+    .thmv-dash-bundled-plugins-box{
+        width: 100%;
+        background: #F7F7F7;
+        border-radius: 10px;
+        margin: 0px 15px;
+        padding: 40px 0;
+        display: flex;
+        align-items: normal;
+    }
+    .thmv-dash-registration .thmv-column-3,
+    .thmv-dash-started .thmv-column-3,
+    .thmv-dash-three-box .thmv-dash-three-col .thmv-column-3,
+    .thmv-dash-all-plugins .thmv-column-3{ 
+        flex: 0 0 auto;
+        width: 100%;
+        max-width:33.333%;
+        padding: 0 15px;
+        align-items: center;
+    }
+
+    .thmv-dash-registration .thmv-registration-info h3{
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin:0px 0px 10px;
+    }
+    .thmv-dash-registration .thmv-registration-info{
+        margin-left: 20px;
+    }
+    .thmv-dash-registration .thmv-registration-info svg{
+        margin:-2px 3px;
+    }
+    .thmv-dash-registration .thmv-registration-info p,
+    .thmv-dash-bundled-plugins .thmv-bundled-plugins-info p,
+    .thmv-dash-started .thmv-column-3 p,
+    .thmv-dash-started .thmv-column-3 .thmv-dash-listing  li,
+    .thmv-dash-common-questions .thmv-column-1 .thmv-dash-listing li,
+    .thmv-dash-all-plugins .thmv-column-3 p{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0;
+        color: #888D94;
+    }
+    .thmv-dash-subform .thmv_email_form input{
+        width:75%;
+    }
+    .thmv-dash-subform .thmv_email_form button{
+        width:25%;
+    }
+
+    .thmv-dash-registration .thmv-help-text{
+        font-size: 12px;
+        color:#888d94;
+        padding: 5px;
+    }
+
+    /* thmv-dash-started */
+    .thmv-dash-started{
+        margin-top: 20px;
+    }
+    .thmv-dash-started .thmv-dash-started-box,
+    .thmv-dash-common-questions .thmv-dash-questions-box,
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box{
+        width: 100%;
+        display: flex;
+    }
+    .thmv-dash-started .thmv-column-3 h3,
+    .thmv-dash-common-questions .thmv-column-1 h3,
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3{
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:#0C1015;
+        margin: 0;
+    }
+
+    .thmv-dash-started .thmv-column-3 h3 svg,
+    .thmv-dash-common-questions .thmv-column-1 h3 svg{
+        vertical-align: middle;
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+    .thmv-dash-started .thmv-column-3 p,
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box p{
+        margin:14px 0px 10px;
+        color:#0C1015;
+    }
+    .thmv-dash-started .thmv-column-3 .thmv-help-guide{
+        display: block;
+        width:100%;
+        margin: 15px 0 0 2px;
+    }
+    .thmv-dash-started .thmv-column-3 .thmv-help-guide a,
+    .thmv-dash-started .thmv-column-3 .thmv-learn-more a,
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box a{
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #BAD344;
+        transition:all 0.3s;
+    }
+    .thmv-dash-started .thmv-column-3 .thmv-help-guide a:hover,
+        .thmv-dash-started .thmv-column-3 .thmv-learn-more a:hover,
+        .thmv-dash-all-plugins .thmv-dash-all-plugins-box a:hover{
+        color:#2f2e41;
+    }
+    .thmv-dash-started .thmv-column-3 .thmv-launch-setup,
+    .thmv-dash-started .thmv-column-3 .thmv-make-request,
+    .thmv-dash-common-questions .thmv-dash-questions-box .thmv-view-all,
+    .thmv-dash-common-questions .thmv-dash-questions-box .thmv-openticket-btn,
+    .thmv-dash-templates .thmv-dash-templates-box button,
+    .thmv-dash-welcome button.thmv-addnew-btn{
+        padding: 14px 0px;
+        width: 180px;
+        margin-top: 30px;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .thmv-dash-started .thmv-column-3 .thmv-launch-setup{
+        margin-top: 6px;
+    }
+    .thmv-dash-started .thmv-column-3 .thmv-dash-listing,
+    .thmv-dash-common-questions .thmv-column-1 .thmv-dash-listing{
+        margin:14px 0px;
+    }
+    .thmv-dash-started .thmv-column-3 .thmv-dash-listing  li,
+    .thmv-dash-common-questions .thmv-column-1 .thmv-dash-listing li{
+        text-align: left;
+        color: #888D94;
+        margin-bottom: 5px;
+        position: relative;
+        margin-left: 25px;
+    }
+    .thmv-dash-started .thmv-column-3 .thmv-dash-listing  li:after,
+        .thmv-dash-common-questions .thmv-column-1 .thmv-dash-listing li:after{
+        content:"";
+        background:#BAD344;
+    }
+    .thmv-dash-started .thmv-column-3 .thmv-learn-more a{
+        margin-left: 10px;
+    }
+    .thmv-dash-started .thmv-column-3 .thmv-make-request,
+    .thmv-dash-three-box .thmv-dash-three-box-info .thmv-launch-setup,
+    .thmv-dash-documentation .thmv-dash-col-info button,
+    .thmv-dash-common-questions .thmv-dash-questions-box .thmv-view-all{
+        margin-top: 20px;
+        background: transparent;
+        color: #bad344;
+    }
+
+    /* thmv-dash-three-box */
+    .thmv-dash-three-box{
+        margin:70px auto 60px;
+    }
+    .thmv-dash-three-box .thmv-dash-three-col{
+        width:100%;
+        display: flex;
+    }
+    .thmv-dash-three-box .thmv-column-3 .thmv-column-3-box{
+        background: #F6F6F6;
+        padding:30px;
+        border-radius:10px;
+        min-height:300px;
+    }
+
+    .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info{
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 60%;
+    }
+    .thmv-dash-three-box .thmv-column-3 .thmv-dash-model-img{
+        flex: 0 0 auto;
+        width: 30%;   
+    }
+    .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info img{
+        width:100%;
+        max-width:100%;
+        margin-bottom: 10px;
+    }
+    .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info h3{
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+    .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info p{
+        margin: 0;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        min-height: 50px;
+    }
+    .thmv-dash-three-col .user-tabe ul{
+        border: 3px solid #E6E6E6;
+        border-radius: 50px;
+        background: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    .thmv-dash-three-col .user-tabe li{
+        display: inline-block;
+        padding: 10px 25px;
+        line-height: 1px;
+        border-right:1px solid #E6E6E6;
+    }
+    .thmv-dash-three-col .user-tabe li:hover,
+        .thmv-dash-three-col .user-tabe li.thmv-dash-active{
+        cursor: pointer;
+        background: #BAD344;
+    }
+    .thmv-dash-three-col .user-tabe li:hover svg path,
+        .thmv-dash-three-col .user-tabe li.thmv-dash-active svg path{
+        fill: #FFFFFF;
+    }
+    .thmv-dash-three-col .user-tabe li:last-child{
+        border: none;
+    }
+
+    /*Tab Style */
+    .thmv-dash-three-box .thmv-dash-three-box-info .thmv-dash-tabs{
+        width: 100%;
+        position: relative;
+    }
+    .thmv-dash-three-box-info .thmv-dash-tabs .tabnav {
+        display: none !important;
+    }
+    .thmv-dash-three-box-info .thmv-dash-tabs  input.tabnav:hover + .thmv-tab-title:after,
+        .thmv-dash-three-box-info .thmv-dash-tabs input.tabnav:checked + .thmv-tab-title:after{
+        opacity: 1;
+    }
+    .thmv-dash-three-box-info .thmv-dash-tabs  input.tabnav:hover + .thmv-tab-title,
+        .thmv-dash-three-box-info .thmv-dash-tabs input.tabnav:checked + .thmv-tab-title {
+        font-weight: 700;
+    }
+    .thmv-dash-three-box-info .thmv-dash-tabs .tabnav,
+    .thmv-dash-three-box-info .thmv-dash-tabs .thmv-tab-title {
+        cursor: pointer;
+    }
+
+
+    .thmv-dash-three-box-info .thmv-dash-tabs .tab-content{
+        margin-top:35px;
+    }
+    .thmv-dash-three-box-info .thmv-dash-tabs .tab-content section {
+        display: none;
+    }
+
+    .thmv-dash-three-box-info .thmv-dash-tabs input.tab-1:checked ~ .tab-content .tab-item-1,
+        .thmv-dash-three-box-info .thmv-dash-tabs input.tab-2:checked ~ .tab-content .tab-item-2,
+        .thmv-dash-three-box-info .thmv-dash-tabs input.tab-3:checked ~ .tab-content .tab-item-3,
+        .thmv-dash-three-box-info .thmv-dash-tabs input.tab-4:checked ~ .tab-content .tab-item-4,
+        .thmv-dash-three-box-info .thmv-dash-tabs input.tab-5:checked ~ .tab-content .tab-item-5,
+        .thmv-dash-three-box-info .thmv-dash-tabs input.tab-6:checked ~ .tab-content .tab-item-6{
+        display: block;
+    }
+
+    .thmv-dash-three-box-info .thmv-tab-title svg{
+        margin: 6px 22px;
+        display: flex;
+        padding: 1px;
+    }
+    .thmv-dash-three-box-info .thmv-tab-title {
+        display: inline-block;
+        border: 3px solid #E6E6E6;
+        margin:0px -3px;
+        background: #FFFFFF;
+    }
+    .thmv-dash-three-box-info .thmv-tab-title:hover{
+
+    }
+    .thmv-dash-three-box-info .thmv-dash-tabs .thmv-tab-first{
+        border-top-left-radius:50px;
+        border-bottom-left-radius:50px;
+        border-right:0;
+    }
+    .thmv-dash-three-box-info .thmv-dash-tabs .thmv-tab-last{
+        border-top-right-radius:50px;
+        border-bottom-right-radius:50px;
+        border-left: 0;
+    }
+
+    .thmv-dash-three-box-info .thmv-dash-tabs input:checked + label,
+        .thmv-dash-three-box-info .thmv-dash-tabs input + label:hover,
+        .thmv-dash-three-box-info .thmv-dash-tabs input:checked + label svg path,
+        .thmv-dash-three-box-info .thmv-dash-tabs input + label:hover svg path {
+        background: #BAD344;
+        fill: #FFFFFF;
+    }
+
+    .thmv-dash-three-box .thmv-dash-three-box-info .thmv-launch-setup{
+        background:#FFFFFF;
+        color: #0C1015;
+        width: 160px;
+    }
+    .thmv-dash-three-box .thmv-dash-three-col .thmv-customize-bg{
+        @include setBgImage('customize-bg.png');
+        background-size: 28%;
+        background-position: 90% 64%;
+        background-repeat: no-repeat;
+    }
+    .thmv-dash-three-box .thmv-dash-three-col .thmv-integrations-bg{
+        @include setBgImage('integrations-bg.png');
+        background-size: 28%;
+        background-position: 90% 64%;
+        background-repeat: no-repeat;
+    }
+    .thmv-dash-three-box .thmv-dash-three-col .thmv-license-bg{
+        @include setBgImage('license-bg.png');
+        background-size: 28%;
+        background-position: 90% 64%;
+        background-repeat: no-repeat;
+    }
+    /* Theme Health */
+    .thmv-dash-health{
+        margin-bottom: 50px;
+    }
+    .thmv-dash-health .thmv-dash-heading{
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+    .thmv-dash-health .thmv-column-1{
+        flex: 0 0 auto;
+        width: 66.5%;
+        padding: 0 15px;
+    }
+    .thmv-dash-health .thmv-column-2{
+        flex: 0 0 auto;
+        width: 33.5%;
+        padding: 0 15px;
+    }
+    .thmv-dash-subscribe .thmv-column-1 .thmv-dash-subscribe_box,
+    .thmv-dash-health .thmv-dash-health-box{
+        border: 1px solid #E3E3E3;
+        border-radius: 10px;
+    }
+    .thmv-dash-health .thmv-dash-health-box {
+        display: flex;
+        padding: 50px 20px;
+    }
+    .thmv-dash-health .thmv-column-1 .thmv-dash-col-registered,
+    .thmv-dash-health .thmv-column-1  .thmv-dash-col-premium{
+        flex: 0 0 auto;
+        width:100%;
+        padding: 0px 15px;
+        max-width:50%;
+    }
+    .thmv-dash-health .thmv-column-1  .thmv-dash-col-premium h3{
+        font-size: 100%;
+    }
+    .thmv-dash-health .thmv-dash-col-registered ul{
+        margin-bottom: 15px;
+    }
+    .thmv-dash-health .thmv-dash-col-registered ul li{
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+        display:inline-block;
+        margin-right: 5px;
+        color:#0C1015;
+    }
+    .thmv-dash-health .thmv-dash-col-registered ul li:last-child{
+        margin-right: 0;
+    }
+    .thmv-dash-health .thmv-dash-col-registered ul li a{
+        font-weight: 700;
+        color: #BAD344;
+    }
+    .thmv-dash-health .thmv-dash-col-registered ul li a svg{
+        vertical-align:middle;
+        margin-right:5px;
+    }
+    .thmv-dash-health .thmv-dash-col-registered h3 svg{
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    .thmv-dash-health .thmv-column-1 .thmv-dash-col-premium{
+        display: flex;
+        flex-flow: column;
+    }
+    .thmv-dash-health .thmv-column-1 .thmv-dash-col-premium h3{
+        display: flex;
+        align-items: center;
+    }
+    .thmv-dash-health .thmv-column-1 .thmv-dash-col-premium
+    .thmv-dash-health .thmv-column-1 .thmv-dash-col-premium label{
+        margin-left: 20px;
+    }
+    /* Toggle button*/
+    .thmv-dash-health-box .thmv-switch,
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3 .thmv-switch{
+        position: relative;
+        display: inline-block;
+        width: 42px;
+        height: 22px;
+        margin-left: 10px;
+    }
+    .thmv-dash-health-box .thmv-switch input,
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3 .thmv-switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .thmv-dash-health-box .thmv-slider,
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3 .thmv-slider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .thmv-dash-health-box .thmv-slider:before,
+        .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3 .thmv-slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    .thmv-dash-health-box .thmv-switch input:checked + .thmv-slider,
+        .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3 .thmv-switch input:checked + .thmv-slider {
+        background-color: #BAD344;
+    }
+    .thmv-dash-health-box .thmv-switch input:focus + .thmv-slider,
+        .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3 .thmv-switch input:focus + .thmv-slider{
+        box-shadow: 0 0 1px #BAD344;
+    }
+    .thmv-dash-health-box .thmv-switch input:checked + .thmv-slider:before,
+        .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3 .thmv-switch input:checked + .thmv-slider:before{
+        left: -3px;
+        -webkit-transform: translateX(25px);
+        -ms-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+    .thmv-dash-health-box .thmv-slider.thmv-round,
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3 .thmv-slider.thmv-round{
+        border-radius: 34px;
+    }
+    .thmv-dash-health-box .thmv-slider.thmv-round:before,
+        .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3 .thmv-slider.thmv-round:before {
+        border-radius: 50%;
+    }
+    .thmv-dash-health .thmv-dash-col-premium .thmv-renew,
+    .thmv-dash-all-plugins{
+        margin-top: 10px;
+    }
+    .thmv-dash-health .thmv-dash-col-premium .thmv-renew button{
+        width: 150px;
+        margin-right: 50px;
+    }
+    .thmv-dash-health .thmv-dash-col-premium .thmv-renew a{
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+        color:#BAD344;
+        text-decoration:none;
+        transition:all 0.3s;
+    }
+    .thmv-dash-health .thmv-dash-col-premium .thmv-renew a:hover{
+        color:#2F2E41;
+    }
+    /* System status */
+    .thmv-dash-health .thmv-system-status li{
+        display: flex;
+        width: 100%;
+        padding: 14px 10px;
+    }
+    .thmv-dash-health .thmv-system-status li:nth-child(odd){
+        background: #F6F6F6;
+    }
+    .thmv-dash-health .thmv-system-status li:nth-child(even){
+        background: #FFFFFF;   
+    }
+    .thmv-dash-health .thmv-system-status li .thmv-version-title,
+    .thmv-dash-health .thmv-system-status li .thmv-version-info{
+        width:50%;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #0C1015;
+        .error-value{
+            color: red;
+            font-weight: 700;
+        }
+    }
+    .thmv-dash-health .thmv-system-status li .thmv-version-info{
+        font-weight: 400;
+    }
+    .thmv-dash-health .thmv-system-status li .thmv-version-info .recommended{
+        color: #BAD344;
+        font-weight: 700;
+    }
+
+    /*==================================*/
+    /* Documentation & Help page */
+    /*==================================*/
+    .thmv-dash-documentation .thmv-column-1,
+    .thmv-dash-documentation .thmv-column-2,
+    .thmv-dash-documentation .thmv-dash-documentation-box,
+    .thmv-dash-documentation .thmv-dash-documentation-box .thmv-dash-col-info,
+    .thmv-dash-documentation .thmv-dash-documentation-box .thmv-dash-col-img{
+        flex: 0 0 auto;
+        width: 50%;
+        padding: 0 15px;
+    }
+    .thmv-dash-documentation{
+        margin-bottom: 60px;
+    }
+    .thmv-dash-documentation .thmv-dash-documentation-box,
+    .thmv-dash-templates .thmv-dash-templates-box{
+        border: 1px solid #E3E3E3;
+        border-radius: 10px;
+        padding: 30px 10px;
+        width:100%;
+        display: flex;
+        align-items: center;
+    }
+    .thmv-dash-documentation .thmv-dash-documentation-box .thmv-dash-col-info{
+        width: 40%;
+    }
+    .thmv-dash-documentation .thmv-dash-documentation-box .thmv-dash-col-img{
+        width: 60%;
+        text-align: right;
+    }
+    .thmv-dash-documentation .thmv-dash-documentation-box .thmv-dash-col-img img{
+        width:100%;
+        max-width:280px;
+    }
+    .thmv-dash-documentation .thmv-dash-col-info .thmv-light-marker{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 32px;
+        color: #BAD344;
+        background: #BAD34420;
+        border-radius: 100px;
+        display: inline-block;
+        margin: 0;
+        width: 85px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .thmv-dash-documentation .thmv-dash-col-info .thmv-dash-title{
+        margin: 15px 0px;
+    }
+    .thmv-dash-documentation .thmv-dash-col-info button {
+        width: 170px;
+        margin-top: 10px;
+    }
+    .thmv-dash-common-questions{
+        margin-bottom: 50px;
+    }
+    .thmv-dash-common-questions .thmv-column-1{
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 70%;
+        padding: 0 15px;
+        align-items: center;
+    }
+    .thmv-dash-common-questions .thmv-column-2{
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 30%;
+        padding: 0 15px;
+        align-items: center;
+    }
+    .thmv-dash-common-questions .thmv-dash-questions-box .thmv-dash-questions-list{
+        display: flex;
+    }
+    .thmv-dash-common-questions .thmv-dash-questions-list .thmv-dash-listing{
+        width:50%;
+        padding:0 10px;
+    }
+    .thmv-dash-common-questions .thmv-column-1 .thmv-dash-listing li{
+        margin-left: 14px;
+        margin-bottom: 8px;
+    }
+    .thmv-dash-common-questions .thmv-dash-questions-box .thmv-view-all{
+        width: 150px;
+    }
+    .thmv-dash-common-questions .thmv-dash-questions-box .thmv-open-ticket{
+        background: #F6F6F6;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .thmv-dash-common-questions .thmv-dash-questions-box .thmv-openticket-btn{
+        margin-top: 0;
+    }
+    .thmv-dash-common-questions .thmv-dash-questions-box .thmv-open-ticket img{
+        width: 100%;
+        max-width: 105px;
+        margin-left: 10px;
+    }
+
+    /*==================================*/
+    /* Page Templates */
+    /*==================================*/
+    .thmv-dash-templates{
+        margin-bottom: 50px;
+    }
+    .thmv-dash-templates .thmv-column-1,
+    .thmv-dash-templates .thmv-column-2,
+    .thmv-dash-templates .thmv-dash-templates-box,
+    .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-info,
+    .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-img{
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .thmv-dash-templates .thmv-column-1{
+        width: 75%;
+        position: relative;
+    }
+    .thmv-dash-templates .thmv-column-2{
+        width: 25%;
+    }
+    .thmv-dash-templates .thmv-column-1 .thmv-dash-templates-box:after{
+        content: "";
+        @include setBgImage('leaves-img.png');
+        background-repeat: no-repeat;
+        background-size: 55%;
+        display: inline-block;
+        width: 70px;
+        height: 108px;
+        position: absolute;
+        top: 1px;
+        left: 6%;
+    }
+    .thmv-dash-templates .thmv-dash-templates-box{
+        min-height: 350px;
+    }
+    .thmv-dash-templates .thmv-column-1 .thmv-dash-templates-box .thmv-dash-col-info{
+        padding: 90px 20px;
+    }
+    .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-info{
+        width:60%;
+    }
+    .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-img{
+        width: 40%;
+    }
+    .thmv-dash-templates .thmv-column-2 .thmv-dash-templates-box .thmv-dash-col-info,
+    .thmv-dash-templates .thmv-column-2 .thmv-dash-col-info img,
+    .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-img img{
+        width:100%;
+    }
+    .thmv-dash-templates .thmv-dash-templates-box button{
+        margin-top: 14px;
+        width:auto;
+        padding:15px 40px;
+    }
+    .thmv-dash-templates .thmv-column-2 .thmv-dash-templates-box{
+        background: #F6F6F6;
+        padding: 43px 5px;
+        border-radius: 10px;
+    }
+    /*==================================*/
+    /* Bundled Plugins */
+    /*==================================*/
+    .thmv-dash-bundled-plugins .thmv-dash-bundled-plugins-box{
+        border-radius:0;
+        padding: 20px;
+        position: relative;
+    }
+    .thmv-dash-bundled-plugins .thmv-dash-bundled-plugins-box .thmv-bundled-plugins-info{
+        max-width: 860px;
+    }
+    .thmv-dash-bundled-plugins .thmv-dash-bundled-plugins-box .thmv-bundled-plugins-info p{
+        font-size: 14px;
+    }
+    .thmv-dash-bundled-plugins .thmv-dash-bundled-plugins-box  button{
+        border: 0px;
+        background: transparent;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+    }
+    .thmv-dash-bundled-plugins .thmv-dash-bundled-plugins-box  button:hover{
+        cursor: pointer;
+    }
+    .thmv-dash-bundled-plugins .thmv-dash-bundled-plugins-box  button svg path{
+        transition:all 0.3s;
+    }
+    .thmv-dash-bundled-plugins .thmv-dash-bundled-plugins-box  button:hover svg path{
+        fill:#CCCCCC;
+    }
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box{
+        margin-bottom: 40px;
+        flex-wrap:wrap;
+    }
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box .thmv-column-3{
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        .installation-progress{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            z-index: -1;
+            top: 0;
+            &.in-progress{
+                z-index: 2;
+                background-color: rgba(0, 0, 0 , 0.5);
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3 .thmv-switch{
+        width: 40px;
+        height: 20px;
+    }
+    .thmv-dash-all-plugins .thmv-dash-all-plugins-box h3 .thmv-slider:before{
+        height: 14px;
+        width: 14px;
+    }
+    .thmv-bundled-plugins-heading .thmv-dash-row{
+        justify-content: space-between;
+        align-items: center;
+        padding:0px 15px;
+    }
+    .thmv-dash-welcome button.thmv-addnew-btn{
+        margin-top: 0;
+        display: none;
+    }
+    .thmv-bundled-plugins-heading .thmv-dash-heading{
+        display: inline-block;
+        width:auto;
+        padding: 0;
+    }
+
+    @media only screen and (max-width:1350px){
+        .thmv-dash-three-box .thmv-column-3-box{
+            min-height: 285px;
+        }
+        .thmv-dash-three-box-info .thmv-tab-title svg {
+            margin: 4px 15px;
+            display: flex;
+            padding: 1px;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info{
+            position: relative;
+            min-height: 230px;
+        }
+        .thmv-dash-three-box .thmv-dash-three-box-info .thmv-launch-setup{
+            position: absolute;
+            bottom: 0;
+        }
+        .thmv-dash-started .thmv-column-3 .thmv-dash-paragraph br{
+            display: none
+        }
+        /*========  Documentation & Help ========*/
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-openticket-btn{
+            width:150px;
+        }
+    }
+
+    @media only screen and (max-width:1199px){
+        .thmv-dash-subscribe .thmv-column-1{
+            width: 65%;
+        }
+        .thmv-dash-subscribe .thmv-column-2{
+            width: 35%;
+        }
+        .thmv-dash-subscribe .thmv-column-1 .thmv-dash-col-info {
+            max-width: 390px;
+            padding: 30px 30px 50px;
+        }
+        .thmv-dash-subscribe .thmv-free-download {
+            padding: 20px 20px 34px;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-column-3-box{
+            padding: 20px;
+        }
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-customize-bg{
+            background-size: 28%;
+            background-position: 95% 84%;
+        } 
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-integrations-bg {
+            background-size: 28%;
+            background-position: 95% 80%;
+        }
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-license-bg {
+            background-size: 29%;
+            background-position: 95% 75%;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info {
+            max-width: 75%;
+        }   
+        .thmv-dash-three-box .thmv-dash-three-box-info .thmv-launch-setup{
+            width: 130px;
+            padding: 14px;
+        }
+        .thmv-dash-health .thmv-dash-col-premium .thmv-renew button{
+            margin-right: 8px;
+            width: 120px;
+            padding: 14px;
+        }
+        .thmv-dash-started .thmv-column-3 .thmv-launch-setup,
+        .thmv-dash-started .thmv-column-3 .thmv-make-request {
+            padding: 14px;
+            width: 150px;
+        }
+        .thmv-dash-health .thmv-dash-health-box{
+            padding:50px 10px;
+        }
+        .thmv-dash-health-box .thmv-switch{
+            margin-left:5px;
+        }
+
+        /*========  Documentation & Help ========*/
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-open-ticket{
+            padding: 15px;
+        }
+        .thmv-dash-documentation .thmv-dash-documentation-box .thmv-dash-col-info,
+        .thmv-dash-documentation .thmv-dash-documentation-box .thmv-dash-col-img{
+            width: 50%;
+        }
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-openticket-btn {
+            width: 120px;
+        }
+        /*========  Page Templates ========*/
+        .thmv-dash-templates .thmv-column-1{
+            width: 70%;
+        }
+        .thmv-dash-templates .thmv-column-2{
+            width: 30%;
+        }
+        .thmv-dash-templates .thmv-column-1 .thmv-dash-templates-box .thmv-dash-col-info {
+            padding: 40px 20px;
+        }
+        .thmv-dash-templates .thmv-column-2 .thmv-dash-templates-box{
+            padding:30px 5px;
+        }
+    }
+
+    @media only screen and (max-width:1024px){
+        /*========  Documentation & Help ========*/
+        .thmv-dash-documentation .thmv-dash-documentation-box{
+            padding: 30px 10px;
+        }    
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-open-ticket img{
+            max-width: 90px;    
+        }
+        /*========  Page Templates ========*/
+        .thmv-dash-templates .thmv-column-1 .thmv-dash-templates-box .thmv-dash-col-info {
+            padding: 55px 20px;
+        }
+    }
+
+    @media only screen and (max-width:960px){
+        .thmv-dash-subscribe .thmv-column-1,
+        .thmv-dash-subscribe .thmv-column-2,
+        .thmv-dash-health .thmv-column-1,
+        .thmv-dash-health .thmv-column-2,
+        .thmv-dash-documentation .thmv-dash-documentation-box .thmv-dash-col-info,
+        .thmv-dash-documentation .thmv-dash-documentation-box .thmv-dash-col-img,
+        .thmv-dash-documentation .thmv-dash-documentation-box .thmv-dash-col-img img,
+        .thmv-dash-common-questions .thmv-dash-questions-list .thmv-dash-listing{
+            width: 100%;
+        }
+        .thmv-dash-subscribe .thmv-free-download .thmv-dash-title br{
+            display: none;
+        }
+        .thmv-dash-subscribe .thmv-column-1 .thmv-dash-col-info {
+            max-width: 450px;
+        }
+        .thmv-dash-subscribe .thmv-column-1 .thmv-dash-subscribe_box{
+            margin-bottom: 30px;
+        }
+        .thmv-dash-started-welcome .thmv-dash-heading{
+            font-size: 22px;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info h3{
+            font-size: 20px;
+        }
+        .thmv-dash-subscribe .thmv-column-1 .thmv-dash-subscribe_box h3,
+        .thmv-dash-started .thmv-column-3 h3{
+            font-size: 18px;
+        }
+        .thmv-dash-started .thmv-column-3 p,
+        .thmv-dash-started .thmv-column-3 .thmv-help-guide a,
+        .thmv-dash-started .thmv-column-3 .thmv-learn-more a,
+        .thmv-dash-started .thmv-column-3 .thmv-dash-listing li,
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info p,
+        .thmv-dash-health .thmv-system-status li .thmv-version-title,
+        .thmv-dash-health .thmv-system-status li .thmv-version-info,
+        .thmv-dash-common-questions .thmv-column-1 .thmv-dash-listing li{
+            font-size: 16px;
+        }
+        .thmv-dash-started .thmv-column-3 p,
+        .thmv-dash-started .thmv-column-3 .thmv-dash-listing li{
+            line-height:24px;
+        }
+        .thmv-dash-paragraph,.thmv-body .thmv-dash-registration .thmv-registration-info p,
+        .thmv-dash-subscribe .thmv-free-download ul li,
+        .thmv-dash-registration .thmv-registration-info p{
+            font-size: 14px;
+            color:#3c434a;
+        }
+        .thmv-dash-subscribe .thmv-free-download{
+            background-size: 170px;
+            background-position: 75% 50%;
+        }
+        .thmv-dash-registration .thmv-dash-registration-box,
+        .thmv-dash-started .thmv-dash-started-box,
+        .thmv-dash-three-box .thmv-dash-three-col{
+            flex-flow: column;
+        }
+        .thmv-dash-registration .thmv-dash-registration-box .thmv-column-3,
+        .thmv-dash-started .thmv-column-3,
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-column-3,
+        .thmv-dash-templates .thmv-column-1,
+        .thmv-dash-templates .thmv-column-2,
+        .thmv-dash-common-questions .thmv-column-1,
+        .thmv-dash-common-questions .thmv-column-2{
+            width:100%;
+            max-width:100%;
+        }
+        .thmv-dash-registration .thmv-registration-info h3{
+            margin-bottom: 8px;
+        }
+        .thmv-dash-registration .thmv-dash-registration-box .thmv_email_form,
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info{
+            width: 100%;
+            max-width:60%;
+        }
+        .thmv-dash-subform{
+            margin-top: 15px;
+        }
+        .thmv-dash-started .thmv-column-3{
+            margin-bottom: 40px;
+        }
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-column-3,
+        .thmv-dash-templates .thmv-column-1{
+            margin-bottom: 30px;
+        }
+        .thmv-dash-started .thmv-column-3:last-child,
+            .thmv-dash-three-box .thmv-dash-three-col .thmv-column-3:last-child{
+            margin-bottom: 0
+        }
+        .thmv-dash-registration,
+        .thmv-dash-started,
+        .thmv-dash-health .thmv-dash-health-box{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .thmv-dash-subscribe .thmv-free-download ul li{
+            line-height: 30px;
+        }
+        .thmv-dash-subscribe .thmv-free-download button,
+        .thmv-dash-three-box-info .thmv-dash-tabs .tab-content{
+            margin-top: 20px;
+        }
+        .thmv-dash-started .thmv-column-3 h3 svg{
+            width: 24px;
+            height: 24px;
+            margin-bottom: 5px;
+        }
+        .thmv-dash-started .thmv-column-3 .thmv-launch-setup,
+        .thmv-dash-started .thmv-column-3 .thmv-make-request{
+            padding: 14px 10px;
+            width: 180px;
+        }
+        .thmv-dash-three-box{
+            margin:60px auto 30px;
+        }
+        .thmv-dash-three-box .thmv-dash-three-box-info .thmv-launch-setup {
+            width: 160px;
+            padding: 15px;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-column-3-box {
+            padding: 30px 40px;
+        }
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-customize-bg,
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-integrations-bg,
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-license-bg{
+            background-size: 16%;
+            background-position: 85% 50%;
+        }
+        .thmv-dash-three-box-info .thmv-tab-title svg{
+            margin:7px 22px;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info img{
+            width: 100%;
+            max-width: 250px;
+        }
+        .thmv-dash-three-box-info .thmv-tab-title{
+            margin-bottom: 10px
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info h3,
+        .thmv-dash-common-questions .thmv-column-1 h3{
+            margin-bottom:15px;
+        }
+        /*========  Documentation & Help ========*/
+        .thmv-dash-documentation .thmv-dash-documentation-box,
+        .thmv-dash-common-questions .thmv-dash-questions-box,
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-dash-questions-list{
+            flex-flow: column;
+        }
+        .thmv-dash-documentation .thmv-dash-documentation-box{
+            padding: 20px 10px;
+        }
+        .thmv-dash-common-questions .thmv-column-2{
+            margin-top: 40px;
+        }
+        .thmv-dash-common-questions .thmv-dash-questions-list .thmv-dash-listing{
+            margin:0px;
+        }
+        .thmv-dash-common-questions .thmv-column-1 .thmv-dash-listing li {
+            margin-bottom: 14px;
+        }
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-openticket-btn {
+            width: 230px;
+        }
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-open-ticket {
+            padding: 30px;
+        }
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-open-ticket img{
+            max-width: 110px;    
+        }
+        .thmv-dash-documentation .thmv-dash-documentation-box .thmv-dash-col-img{
+            text-align: center;
+            margin-top: 30px;
+
+        }
+        /*========  Page Templates ========*/
+        .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-info,
+        .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-img{
+            width:50%;
+        }
+        .thmv-dash-templates .thmv-column-2 .thmv-dash-col-info img{
+            width: 250px;
+        }
+        .thmv-dash-templates .thmv-dash-templates-box{
+            min-height:auto;
+        }
+        /*======== Bundled Plugins ========*/
+        .thmv-bundled-plugins-heading .thmv-dash-row {
+            margin: 15px 0px 10px;
+        }
+        .thmv-bundled-plugins-heading .thmv-dash-heading{
+            margin: 0;
+        }
+        .thmv-dash-welcome button.thmv-addnew-btn{
+            display: inline-block;
+        }
+        .thmv-dash-bundled-plugins{
+            margin:10px 0px;
+        }
+        .thmv-dash-bundled-plugins .thmv-dash-bundled-plugins-box{
+            padding-right: 40px;
+            border-radius: 10px;
+        }
+        .thmv-dash-all-plugins .thmv-column-3{
+            max-width:50%;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media only screen and (max-width:782px){
+        .thmv-dash-title{
+            font-size: 20px;
+        }
+        .thmv-dash-paragraph,
+        .thmv-dash-started .thmv-column-3 p,
+        .thmv-dash-started .thmv-column-3 .thmv-help-guide a,
+        .thmv-dash-started .thmv-column-3 .thmv-dash-listing li,
+        .thmv-dash-subscribe .thmv-free-download ul li,
+        .thmv-dash-registration .thmv-registration-info p,
+        .thmv-dash-health .thmv-system-status li .thmv-version-title,
+        .thmv-dash-health .thmv-system-status li .thmv-version-info,
+        .thmv-dash-common-questions .thmv-column-1 .thmv-dash-listing li{
+            font-size: 14px;
+        }
+        .thmv-dash-welcome .thmv-dash-heading{
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+        .thmv-dash-subscribe .thmv-column-1 .thmv-dash-col-info,
+        .thmv-dash-registration .thmv-dash-registration-box .thmv_email_form,
+        .thmv-dash-health .thmv-column-1 .thmv-dash-col-registered,
+        .thmv-dash-health .thmv-column-1 .thmv-dash-col-premium{
+            max-width: 100%;
+        }   
+        .thmv-dash-subscribe .thmv-column-1 .thmv-dash-subscribe_box{
+            background-image:none;
+        }
+        .thmv-dash-subscribe .thmv-column-1 .thmv-dash-col-info {
+            padding: 40px 20px;
+        }
+        .thmv_email_form input,
+        .thmv-dash-subform .thmv_email_form input{
+            width:70%;
+        }
+        .thmv_email_form button,
+        .thmv-dash-subform .thmv_email_form button{
+            width:40%;
+            padding: 15px 4px;
+        }
+        .thmv_email_form input, .thmv_email_form input::placeholder{
+            font-size: 11px;
+            padding: 16px 6px;
+        }
+        .thmv-dash-subscribe .thmv-column-1 .thmv-dash-subscribe_box {
+            margin-bottom: 20px;
+        }
+        .thmv-dash-subscribe .thmv-free-download ul li,
+        .thmv-dash-started .thmv-column-3 .thmv-dash-listing li{
+            line-height:22px;
+            margin-left: 20px
+        }
+        .thmv-dash-subscribe .thmv-free-download ul li:after,
+            .thmv-dash-started .thmv-column-3 .thmv-dash-listing li:after{
+            content:'';
+            width: 4px;
+            height: 4px;
+        }
+        .thmv-dash-subscribe .thmv-free-download {
+            background-size: 80px;
+            background-position: 93% 83%;
+        }
+        .thmv-dash-registration,
+        .thmv-dash-started,
+        .thmv-dash-health .thmv-dash-health-box {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .thmv-dash-registration .thmv-registration-info h3,
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info h3{
+            font-size: 18px;
+        }
+        .thmv-dash-registration .thmv-registration-info svg {
+            margin: -2px 8px;
+            width: 16px;
+            height: 16px;
+        }
+        .thmv-dash-started-welcome .thmv-dash-heading {
+            font-size: 22px;
+            text-align: left;
+        }
+        .thmv-dash-started{
+            margin-top: 10px;
+        }
+        .thmv-dash-subscribe .thmv-column-1 .thmv-dash-subscribe_box h3,
+        .thmv-dash-started .thmv-column-3 h3{
+            font-size: 16px;
+        }
+        .thmv-dash-started .thmv-column-3 h3 svg {
+            width: 22px;
+            height: 22px;
+            margin-bottom: 2px;
+            margin-right: 10px;
+        }
+        .thmv-dash-started .thmv-column-3 p{
+            line-height: 22px;
+        }
+        .thmv-dash-started .thmv-column-3 .thmv-launch-setup,
+        .thmv-dash-started .thmv-column-3 .thmv-make-request {
+            padding: 14px 10px;
+        }
+        .thmv-dash-three-box {
+            margin: 40px auto 10px;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-column-3-box {
+            padding: 20px 20px;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info {
+            width: 100%;
+            max-width: 70%;
+        }
+        .thmv-dash-three-box-info .thmv-tab-title svg {
+            margin: 3px 15px;
+            width: 20px;
+        }
+        .thmv-dash-three-box-info .thmv-tab-title{
+            margin-bottom: 0px;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-column-3-box{
+            min-height:270px;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info h3{
+            margin-bottom: 8px;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info p{
+            font-size: 14px;
+        }
+        .thmv-dash-three-box .thmv-dash-three-box-info .thmv-launch-setup{
+            margin-top: 8px;
+        }
+        .thmv-dash-three-box .thmv-column-3 .thmv-dash-three-box-info {
+            min-height: 215px;
+        }
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-customize-bg,
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-integrations-bg,
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-license-bg {
+            background-size: 17%;
+            background-position: 85% 50%;
+        }
+        .thmv-dash-health .thmv-dash-heading{
+            margin-bottom: 25px;
+        }
+        .thmv-dash-health .thmv-dash-health-box{
+            flex-flow: column;
+        }
+        .thmv-dash-health .thmv-dash-col-registered ul{
+            margin-bottom:20px;
+        }
+        .thmv-dash-health .thmv-column-1 .thmv-dash-col-premium h3{
+            margin: 14px 0 5px;
+            justify-content: flex-start;
+        }
+        .thmv-dash-health .thmv-column-1 .thmv-dash-col-premium h3 label{
+            display: none;
+        }
+        .thmv-dash-health .thmv-dash-health-box{
+            padding: 30px 5px;
+        }
+        .thmv-dash-health .thmv-column-1 .thmv-dash-col-registered h3{
+            margin-top: 0px;
+        }
+        .thmv-dash-health .thmv-dash-col-premium .thmv-renew,
+        .thmv-dash-documentation .thmv-column-1,
+        .thmv-dash-documentation .thmv-column-2{
+            display: flex;
+            width: 100%;
+            flex-flow: column;
+        }
+        .thmv-dash-health .thmv-dash-col-premium .thmv-renew button{
+            margin-bottom: 20px;
+        }
+        .thmv-dash-health .thmv-dash-col-premium .thmv-renew a{
+            text-align:left;
+        }
+        .thmv-dash-health .thmv-system-status li .thmv-version-title{
+            width:45%;
+        }
+        .thmv-dash-health .thmv-system-status li .thmv-version-info{
+            width:55%;
+            padding-left: 8px;
+        }
+        .thmv-dash-health .thmv-dash-health-box{
+            margin: 5px 0px;
+        }
+        /*========  Documentation & Help ========*/
+        .thmv-dash-documentation,
+        .thmv-dash-documentation .thmv-column-1,
+        .thmv-dash-documentation .thmv-column-2,
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-openticket-btn{
+            margin-bottom: 20px;
+        }
+        .thmv-dash-common-questions .thmv-column-1 .thmv-dash-listing li:after{
+            top: 10px;
+        }
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-open-ticket,
+        .thmv-dash-templates .thmv-dash-templates-box{
+            flex-flow:column;
+        }
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-open-ticket img{
+            width: 100%;
+        }
+        /*========  Page Templates ========*/
+        .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-info,
+        .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-img{
+            width:100%;
+        }
+        .thmv-dash-templates .thmv-column-2 .thmv-dash-col-info img{
+            width: 250px;
+        }
+        .thmv-dash-templates .thmv-dash-templates-box{
+            min-height:auto;
+        }
+        .thmv-dash-templates .thmv-column-1 .thmv-dash-templates-box:after{
+            height: 60px;
+            left: 10%;
+        }
+        .thmv-dash-templates .thmv-column-1 .thmv-dash-templates-box .thmv-dash-col-info {
+            padding: 60px 0px 20px;
+        }
+        .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-img{
+            text-align: center;
+        }
+        .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-img img{
+            width:80%;
+        }
+        /*======== Bundled Plugins ========*/
+        .thmv-bundled-plugins-heading .thmv-dash-row{
+            margin: 0
+        }
+        .thmv-bundled-plugins-heading .thmv-dash-heading{
+            margin: 20px 0px 10px;
+        }
+        .thmv-dash-welcome button.thmv-addnew-btn{
+            display: none;
+        }
+        .thmv-dash-all-plugins .thmv-column-3{
+            max-width:100%;
+            margin-bottom: 30px;
+        }
+        .thmv-dash-bundled-plugins .thmv-dash-bundled-plugins-box .thmv-bundled-plugins-info p{
+            line-height:24px;
+        }
+
+    }
+
+    @media only screen and (max-width:575px){
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-customize-bg,
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-integrations-bg,
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-license-bg {
+            background-size: 22%;
+            background-position: 90% 50%;
+        }
+        .thmv-dash-health .thmv-dash-col-registered ul li:first-child{
+            display: block;
+            margin-bottom: 5px;
+        }
+        /* .thmv-dash-health .thmv-dash-col-premium .thmv-renew button,
+        .thmv-dash-started .thmv-column-3 .thmv-launch-setup,
+        .thmv-dash-started .thmv-column-3 .thmv-make-request,
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-view-all,
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-openticket-btn,
+        .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-img img,
+        .thmv-dash-templates .thmv-dash-templates-box button{
+            width: 100%;
+        } */
+        .thmv-dash-health .thmv-dash-col-premium .thmv-renew a{
+            text-align:center;
+        }
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-open-ticket {
+            padding: 20px;
+        }
+        .thmv-dash-templates .thmv-dash-templates-box button{
+            padding:15px 20px;
+        }
+    }
+
+    @media only screen and (max-width:460px){
+        .thmv-dash-health .thmv-dash-col-premium .thmv-renew button,
+        .thmv-dash-started .thmv-column-3 .thmv-launch-setup,
+        .thmv-dash-started .thmv-column-3 .thmv-make-request,
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-view-all,
+        .thmv-dash-common-questions .thmv-dash-questions-box .thmv-openticket-btn,
+        .thmv-dash-templates .thmv-dash-templates-box .thmv-dash-col-img img,
+        .thmv-dash-templates .thmv-dash-templates-box button,
+        .thmv-dash-documentation .thmv-dash-col-info button{
+            width: 100%;
+        }
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-customize-bg{
+            background-size: 30%;
+            background-position: 97% 60%;
+        }
+
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-integrations-bg{
+            background-size: 32%;
+            background-position: 97% 60%;
+        }
+
+        .thmv-dash-three-box .thmv-dash-three-col .thmv-license-bg{
+            background-size: 30%;
+            background-position: 97% 50%;
+        }
+        /*  */
+        .thmv-dash-templates .thmv-column-2 .thmv-dash-col-info img{
+            width:100%;
+        }
+    }
+}

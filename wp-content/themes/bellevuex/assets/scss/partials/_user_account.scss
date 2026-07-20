@@ -1,0 +1,40 @@
+.mphb-account-content{
+    form{
+        p{
+            display: -webkit-box!important;
+            display: -ms-flexbox!important;
+            display: flex!important;
+            -ms-flex-wrap: wrap!important;
+            flex-wrap: wrap!important;
+            input[type=text],input[type=password],input[type=email], select{
+                width: 100%;
+                margin: 0;
+                outline: 0;
+                line-height: normal;
+                height: 40px;
+                padding: 0 15px;
+                border: 1px solid #d3d3d3;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+            }
+            abbr{
+                text-decoration: none;
+                border: none;
+            }
+        }
+        .mphb-account-change-password{
+            margin-top: 3em;
+        }
+    }
+    table.mphb-account-bookings{
+        width: 100%;
+        font-size: 1em;
+        th,td{
+            padding: 5px 0;
+        }
+        tr{
+            border-bottom: 1px solid;
+        }
+    }
+}

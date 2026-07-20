@@ -1,0 +1,80 @@
+
+.headhesive--clone {
+    width:100%;
+    position:fixed !important;
+    top:0;
+    left:0;
+    background-color:#fff !important;
+    z-index:120;
+    box-shadow:none;
+    -webkit-transform:translateY(-100%);
+    -ms-transform:translateY(-100%);
+    transform:translateY(-100%);
+    -webkit-transition:transform 0.2s ease-in-out;
+    -moz-transition:transform 0.2s ease-in-out;
+    transition:transform 0.2s ease-in-out;
+}
+.headhesive--stick {
+    -webkit-transform:translateY(0%);
+    -ms-transform:translateY(0%);
+    transform:translateY(0%);
+}
+
+.boxed-mode .headhesive--clone {
+    left:0; right:0; margin:0 auto;
+}
+
+header.banner.headhesive--clone #logo {
+    margin-top:16px;
+    margin-bottom:16px;
+}
+.headhesive--clone #logo img {
+    max-height:30px !important;
+    width:auto;
+}
+.headhesive--clone #logo .logo-trans {display:none !important}
+.headhesive--clone #logo .logo-main {display:inline !important}
+.headhesive--clone .navbar-nav {margin-top:5px !important}
+.headhesive--clone .navbar-toggle {top:6px !important}
+
+.headhesive--clone .navbar-nav > li > a {color:#5d5d5d !important}
+
+.headhesive--clone .navbar-nav > li > a:hover:after,
+.headhesive--clone .navbar-nav > li.active > a:after,
+.headhesive--clone .navbar-nav > li.active > a:hover:after,
+.headhesive--clone .navbar-nav > li.active > a:focus:after {
+    bottom:12px;
+    background-color:#2c2c2c !important;
+}
+
+.headhesive--clone .navbar-nav .dropdown-menu {margin-top:-2px}
+
+.headhesive--clone .top-nav {
+    background: rgba(0,0,0,0.03) !important;
+}
+
+.headhesive--clone .top-nav-icon-blocks .icon-block p,
+.headhesive--clone .top-nav-icon-blocks .icon-block a,
+.headhesive--clone .top-nav-text p,
+.headhesive--clone .top-nav-text a {
+    color: #5d5d5d !important;
+}
+
+.headhesive--clone.headhesive--stick[data-transparent-header="true"],
+.headhesive--clone.headhesive--unstick[data-transparent-header="true"] {z-index:10000}
+
+
+.headhesive--clone .navbar-nav > li.th-accent > a:hover:after,
+.headhesive--clone .navbar-nav > li.th-accent.active > a:after,
+.headhesive--clone .navbar-nav > li.th-accent.active > a:hover:after,
+.headhesive--clone .navbar-nav > li.th-accent.active > a:focus:after {
+    background: none !important;
+}
+/* Elementor Editor Styling */
+
+.elementor-editor-active .banner[data-transparent-header="true"]:not(.headhesive--clone) {
+    top:25px;
+}
+
+body.elementor-editor-active header.banner:not(.headhesive--clone) {z-index: 1 !important}
+

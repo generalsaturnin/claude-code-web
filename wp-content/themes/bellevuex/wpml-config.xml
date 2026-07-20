@@ -1,0 +1,142 @@
+<wpml-config>
+  <admin-texts>
+    <key name="theme_mods_bellevuex">
+      <key name="0"/>
+      <key name="themo_top_nav_icon_blocks">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+        <key name="3">
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+      </key>
+      <key name="themo_social_media_accounts">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_social_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_social_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_social_url"/>
+        </key>
+      </key>
+      <key name="themo_payments_accepted">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_payments_accepted_logo"/>
+          <key name="themo_payment_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_payments_accepted_logo"/>
+          <key name="themo_payment_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_payments_accepted_logo"/>
+          <key name="themo_payment_url"/>
+        </key>
+      </key>
+      <key name="themo_contact_icons">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+        </key>
+      </key>
+    </key>
+    <key name="theme_mods_bellevuex-child">
+      <key name="0"/>
+      <key name="themo_top_nav_icon_blocks">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+        <key name="3">
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+      </key>
+      <key name="themo_social_media_accounts">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_social_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_social_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_social_url"/>
+        </key>
+      </key>
+      <key name="themo_payments_accepted">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_payments_accepted_logo"/>
+          <key name="themo_payment_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_payments_accepted_logo"/>
+          <key name="themo_payment_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_payments_accepted_logo"/>
+          <key name="themo_payment_url"/>
+        </key>
+      </key>
+      <key name="themo_contact_icons">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+        </key>
+      </key>
+      <key name="themo_top_nav_text"/>
+      <key name="themo_footer_credit"/>
+    </key>
+  </admin-texts>
+</wpml-config>

@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Booked Calendar Widget
+   ========================================================================== */
+
+@media (min-width:1100px) {
+    body table.booked-calendar th .monthName {font-size:20px}
+}
+
+
+/* Calendar in Column */
+
+@media screen and (min-width:721px){
+    body .th-book-cal-small table.booked-calendar .booked-appt-list { max-height:190px; overflow-y: scroll; overflow-x: hidden; padding:15px 20px 10px; }
+    body .th-book-cal-small table.booked-calendar .booked-appt-list h2 { text-align:center; margin:0 0 15px; font-size:16px; }
+    body .th-book-cal-small table.booked-calendar .booked-appt-list h2 span { display:none }
+    body .th-book-cal-small table.booked-calendar .booked-appt-list .timeslot { border-top:0; margin:0 0 6px; }
+    body .th-book-cal-small table.booked-calendar .booked-appt-list .timeslot .timeslot-time,
+    body .th-book-cal-small table.booked-calendar .booked-appt-list .timeslot .timeslot-count { display:none; }
+    body .th-book-cal-small table.booked-calendar .booked-appt-list .timeslot .timeslot-people { width:100%; padding:0; height:auto; }
+    body .th-book-cal-small table.booked-calendar .booked-appt-list .timeslot .timeslot-people button { float:none; margin:0; width:100%; text-align:center; }
+
+    body .th-book-cal-small table.booked-calendar .booked-appt-list .timeslot .timeslot-people button .button-timeslot { display:block; font-weight:600; font-size:13px; }
+    body .th-book-cal-small table.booked-calendar .booked-appt-list .timeslot .timeslot-people button .button-text { display:none; }
+}
+
+/* Calendar on Page w/ Sidebar */
+
+@media screen and (min-width:721px) and (max-width:991px) {
+    body .main.col-sm-8 table.booked-calendar .booked-appt-list h2 { text-align:center; margin:0 0 15px; font-size:16px; }
+    body .main.col-sm-8 table.booked-calendar .booked-appt-list h2 span { display:none }
+    body .main.col-sm-8 table.booked-calendar .booked-appt-list .timeslot { border-top:0; margin:0 0 6px; }
+    body .main.col-sm-8 table.booked-calendar .booked-appt-list .timeslot .timeslot-time,
+    body .main.col-sm-8 table.booked-calendar .booked-appt-list .timeslot .timeslot-count { display:none; }
+    body .main.col-sm-8 table.booked-calendar .booked-appt-list .timeslot .timeslot-people { width:100%; padding:0; height:auto; }
+    body .main.col-sm-8 table.booked-calendar .booked-appt-list .timeslot .timeslot-people button { float:none; margin:0; width:100%; text-align:center; }
+
+    body .main.col-sm-8 table.booked-calendar .booked-appt-list .timeslot .timeslot-people button .button-timeslot { display:block; font-weight:600; font-size:13px; }
+    body .main.col-sm-8 table.booked-calendar .booked-appt-list .timeslot .timeslot-people button .button-text { display:none; }
+}
+
+@media screen and (min-width:1200px) {
+    body .main.col-sm-8 table.booked-calendar .booked-appt-list .timeslot .timeslot-time {width:35%}
+    body .main.col-sm-8 table.booked-calendar .booked-appt-list .timeslot .timeslot-count {width:35%}
+}
+
+/* Full Calendar at Smaller Screen Sizes */
+
+@media screen and (min-width:721px) and (max-width:767px) {
+    body .th-book-cal-large table.booked-calendar .booked-appt-list { max-height:190px; overflow-y: scroll; overflow-x: hidden; padding:15px 20px 10px; }
+    body .th-book-cal-large table.booked-calendar .booked-appt-list h2 { text-align:center; margin:0 0 15px; font-size:16px; }
+    body .th-book-cal-large table.booked-calendar .booked-appt-list h2 span { display:none }
+    body .th-book-cal-large table.booked-calendar .booked-appt-list .timeslot { border-top:0; margin:0 0 6px; }
+    body .th-book-cal-large table.booked-calendar .booked-appt-list .timeslot .timeslot-time,
+    body .th-book-cal-large table.booked-calendar .booked-appt-list .timeslot .timeslot-count { display:none; }
+    body .th-book-cal-large table.booked-calendar .booked-appt-list .timeslot .timeslot-people { width:100%; padding:0; height:auto; }
+    body .th-book-cal-large table.booked-calendar .booked-appt-list .timeslot .timeslot-people button { float:none; margin:0; width:100%; text-align:center; }
+
+    body .th-book-cal-large table.booked-calendar .booked-appt-list .timeslot .timeslot-people button .button-timeslot { display:block; font-weight:600; font-size:13px; }
+    body .th-book-cal-large table.booked-calendar .booked-appt-list .timeslot .timeslot-people button .button-text { display:none; }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    body .th-book-cal-large table.booked-calendar .booked-appt-list .timeslot .timeslot-time {font-size:14px}
+}
+

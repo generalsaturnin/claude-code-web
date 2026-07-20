@@ -1,0 +1,133 @@
+
+.frm_forms form label, .with_frm_style label.frm_primary_label,
+.with_frm_style.frm_login_form label, .frm_forms form input,
+.frm_forms form textarea, .with_frm_style input[type=text],
+.with_frm_style input[type=password], .with_frm_style input[type=email],
+.with_frm_style input[type=number], .with_frm_style input[type=url],
+.with_frm_style input[type=tel], .with_frm_style select,
+.frm_style_formidable-style.with_frm_style select,
+.with_frm_style textarea, .frm_style_formidable-style.with_frm_style textarea,
+#content .with_frm_style input:not([type=submit]):not([type=button]),
+#content .with_frm_style select, #content .with_frm_style textarea,
+.with_frm_style .chzn-container, .with_frm_style input[type=file],
+.with_frm_style .frm_submit input[type=submit],
+.with_frm_style .frm_submit input[type=button], .frm_form_submit_style,
+.with_frm_style.frm_login_form input[type=submit], a.frm_save_draft,
+.with_frm_style #frm_field_cptch_number_container,
+.with_frm_style .frm_radio label, .with_frm_style .frm_checkbox label,
+.frm_forms .frm_description, .with_frm_style p.description,
+.with_frm_style div.description, .with_frm_style div.frm_description,
+.frm_style_formidable-style.with_frm_style .frm_error {
+    font-family:"Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-shadow:none !important;
+}
+
+
+.with_frm_style .form-field,
+.with_frm_style .frm_form_field,
+.frm_style_formidable-style.with_frm_style .form-field {margin-bottom:15px}
+
+.frm_forms form input[type=text], .frm_forms form input[type=email],
+.frm_forms form input[type=url], .frm_forms form input[type=password],
+.frm_forms form input[type=number], .frm_forms form input[type=tel],
+.frm_style_formidable-style.with_frm_style input[type=text],
+.frm_style_formidable-style.with_frm_style input[type=password],
+.frm_style_formidable-style.with_frm_style input[type=email],
+.frm_style_formidable-style.with_frm_style input[type=number],
+.frm_style_formidable-style.with_frm_style input[type=url],
+.frm_style_formidable-style.with_frm_style input[type=tel],
+.frm_style_formidable-style.with_frm_style input[type=file],
+.frm_style_formidable-style.with_frm_style input[type=search] {
+    font-family:"Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:13px;
+    height:46px;
+    margin-bottom:0;
+    padding:0 15px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+
+.frm_forms form input, .frm_forms form textarea,
+.frm_style_formidable-style.with_frm_style textarea {
+    font-size:13px;
+    margin-bottom:0;
+    border:1px solid #d3d3d3;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+.frm_forms form textarea,
+.frm_style_formidable-style.with_frm_style textarea {
+    padding:20px !important;
+}
+
+.frm_forms form label,
+.with_frm_style label.frm_primary_label,
+.with_frm_style.frm_login_form label,
+.frm_style_formidable-style.with_frm_style label.frm_primary_label,
+.frm_style_formidable-style.with_frm_style.frm_login_form label,
+.frm_style_formidable-style.with_frm_style .frm_radio label,
+.frm_style_formidable-style.with_frm_style .frm_checkbox label {
+    font-family:"Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#5d5d5d;
+    font-size:14px;
+    font-weight:normal;
+    margin:20px 0 6px;
+}
+
+.with_frm_style .frm_radio label, .frm_radio label,
+.with_frm_style .frm_checkbox label, .frm_checkbox label {font-size:12px}
+
+
+.frm_forms form select,
+.frm_style_formidable-style.with_frm_style select,
+.frm_forms .frm_form_field select{
+    font-size:13px;
+    height:46px;
+    padding:0 12px !important;
+    color:#6c6c6c;
+    border:1px solid #d3d3d3;
+    border-radius:5px;
+}
+
+
+.with_frm_style .frm_submit input[type=submit],
+.with_frm_style .frm_submit input[type=button],
+.frm_form_submit_style, .with_frm_style.frm_login_form input[type=submit] {
+    background:#151515;
+    color:#fff;
+    padding:10px 30px;
+    margin-top:0;
+    border:0;
+    opacity:1;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+}
+
+.with_frm_style .frm_submit input[type=submit]:hover,
+.with_frm_style .frm_submit input[type=button]:hover,
+.frm_form_submit_style:hover, .with_frm_style.frm_login_form input[type=submit]:hover {
+    background:#151515;
+    color:#fff;
+    opacity:0.9;
+}
+
+.frm_forms .frm_none_container label.frm_primary_label,
+.frm_forms .frm_pos_none {display:none}
+
+.frm_forms .frm_description {font-size:14px !important}
+
+.with_frm_style .frm_error_style,
+.with_frm_style .frm_message,
+.frm_success_style {
+    line-height:1.4;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
