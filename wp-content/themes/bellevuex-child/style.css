@@ -14,3 +14,6 @@ Text Domain:  bellevue-child
    (voir bellevuex/lib/scripts.php). Ce fichier est chargé APRÈS, donc vos
    règles ci-dessous gagnent sans avoir besoin de !important.
    ========================================================================= */
+
+/* Personnalisation existante conservée (masquer le logo). */
+#logo { visibility: hidden; }
