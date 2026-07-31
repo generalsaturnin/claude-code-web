@@ -179,3 +179,43 @@ Checklist de recette :
 **Après** : GeneratePress + GenerateBlocks + thème enfant `lacrochardiere` +
 1 plugin de formulaire + Akismet + Wordfence. Plus léger, plus rapide, bien
 moins de surface d'attaque, et éditable en blocs natifs sans page builder.
+
+---
+
+## 9. Spécificités du site (relevé du 31/07/2026)
+
+### Bilingue FR/EN → Polylang conservé
+Le site est en **français et anglais** via **Polylang**. Polylang fonctionne avec
+l'éditeur de blocs et tout thème → **on le garde**. Seul `connect-polylang-elementor`
+est retiré (spécifique Elementor). Chaque page reconstruite doit avoir sa version
+FR **et** EN, reliées dans Polylang (colonne « + » / drapeaux dans la liste des pages).
+
+### Les hébergements sont des « room types » MotoPress (à convertir en Pages)
+Le contenu des hébergements vit dans le type d'article `mphb_room_type` :
+- 273 Chambre d'hôtes - Océan de verdure
+- 270 Chambre d'hôtes - Maison de gardien
+- 254 Cottages
+- 241 Le cottage de la Crochardière
+
+⚠️ **Avant de désinstaller MotoPress Hotel Booking**, recréer ces contenus en
+**Pages** classiques (copier textes + galeries depuis le rendu actuel). Sinon le
+contenu est perdu.
+
+### Pages réelles vs démo
+Les nombreuses pages en *draft* (Home - Slider/Video/Form, Rooms and Suites, Shop,
+Cart, Checkout, Booking *, Why Us, Our Menu, Blog - *, etc.) sont le **contenu de
+démonstration Bellevue** → à **supprimer en masse** en fin de migration :
+
+```bash
+# Lister d'abord (contrôle visuel), puis supprimer les IDs confirmés démo :
+php wp-cli.phar post list --post_type=page --post_status=draft --fields=ID,post_title,post_name
+# Exemple de suppression ciblée (adapter la liste d'IDs APRÈS vérification) :
+# php wp-cli.phar post delete 49 50 51 52 53 54 55 56 57 58 59 60 61 63 65 66 67 68 70 71 72 73 74 76 77 78 79 80 --force
+```
+
+⚠️ « Home - Coming Soon » (ID 75) est **publiée** : vérifier qu'elle ne sert pas de
+page d'accueil résiduelle, puis la dépublier/supprimer.
+
+### Périmètre cible (≈10 pages × 2 langues)
+Accueil · La propriété · 3-4 hébergements · Région/tourisme · Contact/Localiser,
+chacune en FR + EN.
