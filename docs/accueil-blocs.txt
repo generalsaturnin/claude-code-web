@@ -1,22 +1,22 @@
 <!-- ============================================================
-     PAGE ACCUEIL (FR) — markup de blocs Gutenberg (blocs natifs)
-     Comment l'utiliser :
-     1. Ouvrez la page Accueil FR (ID 69) dans l'éditeur de blocs.
-     2. Menu ⋮ (en haut à droite) → "Éditeur de code"
-        (raccourci : Ctrl+Shift+Alt+M).
-     3. Collez TOUT ce bloc à la place du contenu existant.
-     4. Repassez en "Éditeur visuel" (même menu).
-     5. Remplacez : la photo du hero, les textes, les images des
-        cartes, et les liens (href) vers vos vraies pages.
+     PAGE ACCUEIL (FR) — blocs Gutenberg, contenu réel nettoyé
+     Utilisation :
+     1. Page Accueil FR (ID 69) → éditeur de blocs.
+     2. Menu ⋮ → "Éditeur de code" (Ctrl+Shift+Alt+M).
+     3. Collez TOUT ceci à la place du contenu.
+     4. Repassez en "Éditeur visuel".
+     5. Cliquez chaque emplacement d'image vide → choisissez la
+        photo dans la MÉDIATHÈQUE (pas les vignettes elementor).
+     6. Vérifiez les liens des boutons (slugs des pages).
      ============================================================ -->
 
-<!-- wp:cover {"customOverlayColor":"#3a4a3a","dimRatio":45,"minHeight":72,"minHeightUnit":"vh","align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull" style="min-height:72vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-45 has-background-dim" style="background-color:#3a4a3a"></span><div class="wp-block-cover__inner-container">
+<!-- wp:cover {"customOverlayColor":"#3a4a3a","dimRatio":45,"minHeight":74,"minHeightUnit":"vh","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull" style="min-height:74vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-45 has-background-dim" style="background-color:#3a4a3a"></span><div class="wp-block-cover__inner-container">
 <!-- wp:heading {"textAlign":"center","level":1,"textColor":"white"} -->
-<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">La Crochardière</h1>
+<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">Le Manoir de la Crochardière</h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-text-color">Gîte et chambres d'hôtes de caractère dans la baie du Mont-Saint-Michel</p>
+<p class="has-text-align-center has-white-color has-text-color">Gîte et chambres d'hôtes, dans la baie du Mont-Saint-Michel</p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons">
@@ -24,45 +24,71 @@
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#hebergements">Voir les hébergements</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/contact/">Nous contacter</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#contact">Nous contacter</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
 </div></div>
 <!-- /wp:cover -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"layout":{"type":"constrained","contentSize":"780px"}} -->
-<div class="wp-block-group alignfull" style="padding-top:4rem;padding-bottom:4rem">
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"4rem","bottom":"3rem"}}},"layout":{"type":"constrained","contentSize":"820px"}} -->
+<div class="wp-block-group alignfull" style="padding-top:4rem;padding-bottom:3rem">
 <!-- wp:heading {"textAlign":"center"} -->
-<h2 class="wp-block-heading has-text-align-center">Bienvenue</h2>
+<h2 class="wp-block-heading has-text-align-center">Vacances dans la baie du Mont-Saint-Michel</h2>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Présentez le lieu en trois ou quatre phrases : une longère bretonne restaurée, au calme, à quelques minutes de la baie du Mont-Saint-Michel — l'endroit idéal pour un séjour nature, en famille ou en amoureux.</p>
+<!-- wp:paragraph -->
+<p>Nous vous accueillons en gîte (meublé de tourisme) labellisé Gîtes de France 3 épis, pouvant recevoir jusqu'à 5 personnes dans 65 m² avec jardin privatif, ou dans nos 2 chambres d'hôtes de charme également labellisées 3 épis.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Autour de la maison, nos hôtes se détendent dans la piscine couverte et chauffée (d'avril à début novembre), autour d'une partie de billard américain, de fléchettes, de baby-foot… ou en discutant avec nos chats et nos poules !</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Nous sommes à Dol-de-Bretagne, en Ille-et-Vilaine, petite ville médiévale à 20 minutes de Saint-Malo, Cancale, Dinard et Dinan, et à 25 minutes du Mont-Saint-Michel. Documentation et conseils à votre disposition pour les restaurants et les visites de notre joli coin de Bretagne — pas aussi pluvieux qu'on le dit, mais très chaleureux.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
+
+<!-- wp:gallery {"columns":3,"linkTo":"none","align":"wide"} -->
+<figure class="wp-block-gallery has-nested-images columns-3 is-cropped alignwide">
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img alt="La propriété"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img alt="Le jardin"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img alt="La piscine couverte et chauffée"/></figure>
+<!-- /wp:image -->
+</figure>
+<!-- /wp:gallery -->
 
 <!-- wp:group {"align":"full","anchor":"hebergements","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"3.5rem"}},"color":{"background":"#f5f3ee"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-background" style="background-color:#f5f3ee;padding-top:3.5rem;padding-bottom:3.5rem">
 <!-- wp:heading {"textAlign":"center"} -->
 <h2 class="wp-block-heading has-text-align-center">Nos hébergements</h2>
 <!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Différentes solutions pour des courts et longs séjours, en famille ou en amoureux.</p>
+<!-- /wp:paragraph -->
 <!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"2rem","left":"2rem"}}}} -->
 <div class="wp-block-columns">
 <!-- wp:column -->
 <div class="wp-block-column">
 <!-- wp:image {"sizeSlug":"large","style":{"border":{"radius":"6px"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img alt="Chambre d'hôtes Océan de verdure" style="border-radius:6px"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img alt="Le cottage de la Crochardière" style="border-radius:6px"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Océan de verdure</h3>
+<h3 class="wp-block-heading">Le cottage de la Crochardière</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Chambre d'hôtes ouverte sur le jardin. Court descriptif ici.</p>
+<p>Gîte confortable mitoyen au manoir du 18ᵉ siècle, avec espace extérieur privatif clos (terrasse, salon de jardin, barbecue). De plain-pied : pièce à vivre avec cuisine et salon, une chambre (lit 160×200), une chambre (lits superposés + lit 90), salle de bains.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><strong>5 personnes · 2 chambres · Jardin &amp; terrasse privatifs · Wi-Fi</strong><br>À partir de 380 € / semaine</p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/ocean-de-verdure/">Découvrir</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/le-cottage/">Découvrir</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 </div>
@@ -74,10 +100,13 @@
 <figure class="wp-block-image size-large has-custom-border"><img alt="Chambre d'hôtes Maison de gardien" style="border-radius:6px"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Maison de gardien</h3>
+<h3 class="wp-block-heading">Chambre d'hôtes — Maison de gardien</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Chambre d'hôtes indépendante. Court descriptif ici.</p>
+<p>Au rez-de-chaussée d'un bâtiment annexe, avec entrée indépendante : chambre double (lit 160), salle d'eau avec WC, télévision et terrasse privative dans la cour du manoir. Accès à la piscine couverte chauffée.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><strong>2 personnes · 1 chambre · Terrasse privative</strong><br>À partir de 95 € / nuit</p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
@@ -90,17 +119,20 @@
 <!-- wp:column -->
 <div class="wp-block-column">
 <!-- wp:image {"sizeSlug":"large","style":{"border":{"radius":"6px"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img alt="Le cottage de la Crochardière" style="border-radius:6px"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img alt="Chambre d'hôtes Océan de verdure" style="border-radius:6px"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Le cottage</h3>
+<h3 class="wp-block-heading">Chambre d'hôtes — Océan de verdure</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Gîte indépendant pour un séjour en autonomie. Court descriptif ici.</p>
+<p>Au rez-de-chaussée d'un bâtiment annexe, avec entrée indépendante : suite familiale avec une chambre (lit 160) et son petit salon (TV), une pièce attenante (deux lits de 90), salle d'eau, WC séparés et terrasse couverte privée ouverte sur le jardin.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><strong>4 personnes · 2 chambres · Terrasse privative</strong><br>À partir de 95 € / nuit</p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/le-cottage-de-la-crochardiere/">Découvrir</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/ocean-de-verdure/">Découvrir</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 </div>
@@ -110,37 +142,73 @@
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"layout":{"type":"constrained","contentSize":"780px"}} -->
-<div class="wp-block-group alignfull" style="padding-top:4rem;padding-bottom:4rem">
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"4rem","bottom":"3rem"}}},"layout":{"type":"constrained","contentSize":"820px"}} -->
+<div class="wp-block-group alignfull" style="padding-top:4rem;padding-bottom:3rem">
 <!-- wp:heading {"textAlign":"center"} -->
-<h2 class="wp-block-heading has-text-align-center">La baie du Mont-Saint-Michel</h2>
+<h2 class="wp-block-heading has-text-align-center">Une région pleine d'intérêts</h2>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Quelques mots sur la région et les activités alentour : le Mont, les plages, les sentiers, les marchés…</p>
+<!-- wp:paragraph -->
+<p>Le manoir de la Crochardière est situé à <a href="https://dol-de-bretagne.fr" target="_blank" rel="noopener">Dol-de-Bretagne</a>, aux portes de la Bretagne, dans la baie du Mont-Saint-Michel, à proximité de Cancale, Saint-Malo et Combourg. Balades, sites historiques, plages et activités nautiques, char à voile… il y a de quoi faire.</p>
 <!-- /wp:paragraph -->
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/explore/">Explorer la région</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=b2-6etM8Syg","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=b2-6etM8Syg
+</div></figure>
+<!-- /wp:embed -->
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"3.5rem"}},"color":{"background":"#3a4a3a"}},"layout":{"type":"constrained","contentSize":"780px"}} -->
-<div class="wp-block-group alignfull has-background" style="background-color:#3a4a3a;padding-top:3.5rem;padding-bottom:3.5rem">
-<!-- wp:heading {"textAlign":"center","textColor":"white"} -->
-<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color">Réserver votre séjour</h2>
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"1rem","bottom":"4rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:1rem;padding-bottom:4rem">
+<!-- wp:columns -->
+<div class="wp-block-columns">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">À la Crochardière</h3>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center","textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-text-color">Vérifiez les disponibilités et réservez directement.</p>
+<!-- wp:paragraph -->
+<p>La propriété est aménagée pour votre confort : piscine couverte, jeux d'intérieur et d'extérieur, grand jardin… <a href="/a-la-crochardiere/">Plus d'informations</a></p>
 <!-- /wp:paragraph -->
-<!-- wp:html -->
-<!-- 👉 Coller ici le widget Gîtes de France (iframe/script), ou laisser un bouton ci-dessous -->
-<!-- /wp:html -->
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"style":{"color":{"background":"#ffffff","text":"#3a4a3a"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background wp-element-button" style="color:#3a4a3a;background-color:#ffffff" href="/contact/">Nous contacter</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Plages et activités maritimes</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>De belles plages de sable sont accessibles en 30 minutes. <a href="/explore/">Plus d'informations</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Le Mont-Saint-Michel</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Lieu incontournable du patrimoine français, le Mont vous attend à 30 minutes. <a href="/explore/">Plus d'informations</a></p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Sites et balades d'exception</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Les sentiers de randonnée, dans les terres ou sur la côte, accueillent marcheurs amateurs et confirmés. <a href="/explore/">Plus d'informations</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","anchor":"contact","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"3.5rem"}},"color":{"background":"#f5f3ee"}},"layout":{"type":"constrained","contentSize":"680px"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#f5f3ee;padding-top:3.5rem;padding-bottom:3.5rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Des questions ?</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Écrivez-nous, nous vous répondrons rapidement.</p>
+<!-- /wp:paragraph -->
+<!-- wp:shortcode -->
+[formidable id=2]
+<!-- /wp:shortcode -->
 </div>
 <!-- /wp:group -->
