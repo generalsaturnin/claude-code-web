@@ -1,0 +1,24 @@
+/*
+Theme Name:   La Crochardière
+Theme URI:    https://la-crochardiere.fr
+Description:  Thème enfant de GeneratePress pour le site vitrine de La Crochardière.
+              Toutes les personnalisations (CSS, PHP, theme.json) vivent ici.
+Author:       La Crochardière
+Template:     generatepress
+Version:      1.0.0
+Text Domain:  lacrochardiere
+*/
+
+/* =========================================================================
+   CSS custom du site. Chargé après GeneratePress (voir functions.php),
+   donc vos règles gagnent sans !important.
+   Exemple : variables de marque à adapter.
+   ========================================================================= */
+:root {
+    --lc-accent: #6b7f5e;      /* vert nature — à ajuster */
+    --lc-text:   #2b2b2b;
+    --lc-max-width: 1100px;
+}
+
+/* Exemple de surcharge douce, à adapter à votre charte : */
+/* .site-content { max-width: var(--lc-max-width); } */
