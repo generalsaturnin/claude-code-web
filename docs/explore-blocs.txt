@@ -1,0 +1,151 @@
+<!-- ============================================================
+     PAGE "Explorer la région" (FR) — blocs Gutenberg
+     Nouvelle page, titre "Explorer la région", slug: explore
+     Langue Polylang = Français.
+     Coller via ⋮ > Éditeur de code. Icônes 40px = placeholders.
+     Contenu démo "Floyd's Diner" (lorem ipsum) retiré.
+     ============================================================ -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"1.5rem"}}},"layout":{"type":"constrained","contentSize":"820px"}} -->
+<div class="wp-block-group alignfull" style="padding-top:3.5rem;padding-bottom:1.5rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Explorer la région</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Liste (non-exhaustive) d'activités autour de la Crochardière.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"2rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:0;padding-bottom:2rem">
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"width":"40px","height":"40px","align":"center","className":"lc-icon"} -->
+<figure class="wp-block-image aligncenter is-resized lc-icon"><img alt="icône — À voir" style="object-fit:contain;width:40px;height:40px"/></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center"><a href="#a-voir">À voir</a></h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Musées, monuments, paysages</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"width":"40px","height":"40px","align":"center","className":"lc-icon"} -->
+<figure class="wp-block-image aligncenter is-resized lc-icon"><img alt="icône — Que faire" style="object-fit:contain;width:40px;height:40px"/></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center"><a href="#que-faire">Que faire</a></h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Activités de plein air ou d'intérieur</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"width":"40px","height":"40px","align":"center","className":"lc-icon"} -->
+<figure class="wp-block-image aligncenter is-resized lc-icon"><img alt="icône — Où manger" style="object-fit:contain;width:40px;height:40px"/></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center"><a href="#ou-manger">Où manger</a></h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Galette-saucisse, mais pas que</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","anchor":"a-voir","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"layout":{"type":"constrained"}} -->
+<div id="a-voir" class="wp-block-group alignfull" style="padding-top:3rem;padding-bottom:3rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">À voir</h2>
+<!-- /wp:heading -->
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Nature et paysages</h4>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item --><li>Randonnées sur le GR34</li><!-- /wp:list-item --><!-- wp:list-item --><li>Pointe du Grouin</li><!-- /wp:list-item --><!-- wp:list-item --><li>Menhir du Champ-Dolent</li><!-- /wp:list-item --><!-- wp:list-item --><li>Vallée de la Rance</li><!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">En ville</h4>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item --><li>Dol-de-Bretagne</li><!-- /wp:list-item --><!-- wp:list-item --><li>Saint-Malo</li><!-- /wp:list-item --><!-- wp:list-item --><li>Dinard</li><!-- /wp:list-item --><!-- wp:list-item --><li>Dinan</li><!-- /wp:list-item --><!-- wp:list-item --><li>Cancale</li><!-- /wp:list-item --><!-- wp:list-item --><li>Combourg</li><!-- /wp:list-item --><!-- wp:list-item --><li>Rennes</li><!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Sites remarquables</h4>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item --><li>Le Mont-Saint-Michel</li><!-- /wp:list-item --><!-- wp:list-item --><li>Saint-Malo intra-muros et ses remparts</li><!-- /wp:list-item --><!-- wp:list-item --><li>Le château de Dinan</li><!-- /wp:list-item --><!-- wp:list-item --><li>Le château de Combourg</li><!-- /wp:list-item --><!-- wp:list-item --><li>La cathédrale Saint-Samson de Dol</li><!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","anchor":"que-faire","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}},"color":{"background":"#f5f3ee"}},"layout":{"type":"constrained"}} -->
+<div id="que-faire" class="wp-block-group alignfull has-background" style="background-color:#f5f3ee;padding-top:3rem;padding-bottom:3rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Que faire</h2>
+<!-- /wp:heading -->
+<!-- wp:columns -->
+<div class="wp-block-columns">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Activités de plein air</h4>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item --><li>Char à voile</li><!-- /wp:list-item --><!-- wp:list-item --><li>Canoë et autres activités nautiques</li><!-- /wp:list-item --><!-- wp:list-item --><li>Accrobranche</li><!-- /wp:list-item --><!-- wp:list-item --><li>Karting</li><!-- /wp:list-item --><!-- wp:list-item --><li>Forêt de Villecartier</li><!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">En intérieur</h4>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item --><li>Aquarium de Saint-Malo</li><!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","anchor":"ou-manger","style":{"spacing":{"padding":{"top":"3rem","bottom":"4rem"}}},"layout":{"type":"constrained","contentSize":"780px"}} -->
+<div id="ou-manger" class="wp-block-group alignfull" style="padding-top:3rem;padding-bottom:4rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Où manger</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">De nombreux restaurants, simples ou plus élaborés, sont ouverts selon la saison. N'hésitez pas à nous demander : nous en avons testé quelques-uns !</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
