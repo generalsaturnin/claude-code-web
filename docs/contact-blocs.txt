@@ -1,0 +1,100 @@
+<!-- ============================================================
+     PAGE "Localisation et contact" (FR) — blocs Gutenberg
+     Nouvelle page, titre "Localisation et contact", slug: contact
+     Langue Polylang = Français.
+     Coller via ⋮ > Éditeur de code.
+     ⚠️ REMPLIR les placeholders : e-mail, adresse complète, texte FAQ.
+     Icônes 40px = placeholders (lc-icon).
+     ============================================================ -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"1.5rem"}}},"layout":{"type":"constrained","contentSize":"820px"}} -->
+<div class="wp-block-group alignfull" style="padding-top:3.5rem;padding-bottom:1.5rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Localisation et contact</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Une question, un renseignement, votre itinéraire ? Nous sommes à votre écoute.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"1rem","bottom":"3.5rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:1rem;padding-bottom:3.5rem">
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"2rem","left":"2.5rem"}}}} -->
+<div class="wp-block-columns alignwide">
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"width":"40px","height":"40px","align":"center","className":"lc-icon"} -->
+<figure class="wp-block-image aligncenter is-resized lc-icon"><img alt="icône — Carte et directions" style="object-fit:contain;width:40px;height:40px"/></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Cartes et directions</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">À Dol-de-Bretagne (Ille-et-Vilaine), à 25 min du Mont-Saint-Michel et 20 min de Saint-Malo.<br><a href="#localisation">Voir sur la carte →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"width":"40px","height":"40px","align":"center","className":"lc-icon"} -->
+<figure class="wp-block-image aligncenter is-resized lc-icon"><img alt="icône — Nous contacter" style="object-fit:contain;width:40px;height:40px"/></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Nous contacter</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Téléphone : <a href="tel:+33650427156">06 50 42 71 56</a><br>E-mail : <a href="mailto:VOTRE-EMAIL@la-crochardiere.fr">VOTRE-EMAIL@la-crochardiere.fr</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"width":"40px","height":"40px","align":"center","className":"lc-icon"} -->
+<figure class="wp-block-image aligncenter is-resized lc-icon"><img alt="icône — FAQ" style="object-fit:contain;width:40px;height:40px"/></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">FAQ</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Questions fréquentes (arrivée, animaux, piscine…). <br>[Texte FAQ ou lien à compléter]</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- SECTION "Notre localisation" : adresse en surimpression sur un fond de carte.
+     Sélectionnez le bloc Couverture ci-dessous et définissez en IMAGE DE FOND
+     une capture de carte (ou remplacez tout le bloc par la carte interactive,
+     voir le bloc HTML commenté en bas). -->
+<!-- wp:cover {"customOverlayColor":"#2b2b2b","dimRatio":35,"minHeightUnit":"px","minHeight":460,"anchor":"localisation","align":"full","layout":{"type":"constrained"}} -->
+<div id="localisation" class="wp-block-cover alignfull" style="min-height:460px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-35 has-background-dim" style="background-color:#2b2b2b"></span><div class="wp-block-cover__inner-container">
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"2rem","right":"2rem"}},"color":{"background":"#ffffff"},"border":{"radius":"8px"}},"layout":{"type":"constrained","contentSize":"420px"}} -->
+<div class="wp-block-group has-background" style="border-radius:8px;background-color:#ffffff;padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Notre localisation</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Le Manoir de la Crochardière<br>[Adresse complète]<br>35120 Dol-de-Bretagne</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="tel:+33650427156">06 50 42 71 56</a><br><a href="https://www.google.com/maps/search/?api=1&query=La+Crochardi%C3%A8re+Dol-de-Bretagne" target="_blank" rel="noopener">Itinéraire →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div></div>
+<!-- /wp:cover -->
+
+<!-- OPTION carte interactive (OpenStreetMap) : si vous préférez une vraie carte
+     cliquable plutôt qu'un fond image, ajoutez un bloc HTML personnalisé avec :
+     <iframe title="Carte" width="100%" height="420" style="border:0"
+       loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+       src="https://www.openstreetmap.org/export/embed.html?bbox=-1.76,48.53,-1.70,48.56&layer=mapnik&marker=48.5487,-1.7300"></iframe>
+     (ajustez bbox/marker à vos coordonnées exactes) -->
