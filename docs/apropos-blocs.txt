@@ -1,0 +1,91 @@
+<!-- ============================================================
+     PAGE "À la Crochardière" (FR) — blocs Gutenberg
+     Nouvelle page, titre "À la Crochardière", slug: a-la-crochardiere
+     Langue Polylang = Français.
+     Collez via ⋮ > Éditeur de code, puis remplissez les 3 photos.
+     ============================================================ -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"2rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:3.5rem;padding-bottom:2rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">À la Crochardière</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">La propriété est aménagée pour que petits et grands s'y sentent bien et s'y reposent.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"1.5rem"}}}} -->
+<div class="wp-block-columns alignwide" style="padding-top:1.5rem">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center"><a href="#exterieur">En extérieur</a></h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Terrasses et jardin</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center"><a href="#interieur">En intérieur</a></h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Piscine, mais aussi billard et jeux d'intérieur</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center"><a href="#a-cote">Tout à côté</a></h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Accessible à pied et à vélo</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"lc-region","style":{"spacing":{"padding":{"top":"2rem","bottom":"4rem"},"blockGap":"2.5rem"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull lc-region" style="padding-top:2rem;padding-bottom:4rem">
+
+<!-- wp:media-text {"anchor":"exterieur","align":"wide","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div id="exterieur" class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Terrasses et jardin"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">En extérieur</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Vous pourrez profiter de différents espaces calmes (terrasses, jardins intérieurs) pour jouer au badminton, au Mölkky, à la pétanque… ou tout simplement vous détendre.</p>
+<!-- /wp:paragraph -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"anchor":"interieur","align":"wide","mediaPosition":"right","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div id="interieur" class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Piscine intérieure, billard et jeux"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">En intérieur</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>La propriété est équipée d'une piscine intérieure chauffée (avril à novembre) et de différents jeux (billard, baby-foot, fléchettes) à votre disposition, pour profiter même des rares périodes de pluie.</p>
+<!-- /wp:paragraph -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"anchor":"a-cote","align":"wide","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div id="a-cote" class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Dol-de-Bretagne à proximité"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Tout à côté</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Dol-de-Bretagne est accessible à pied (25 min de marche) ou à vélo (en libre accès) pour la visite, le shopping ou la restauration.</p>
+<!-- /wp:paragraph -->
+</div></div>
+<!-- /wp:media-text -->
+
+</div>
+<!-- /wp:group -->
