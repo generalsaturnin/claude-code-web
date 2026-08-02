@@ -158,44 +158,69 @@ https://www.youtube.com/watch?v=b2-6etM8Syg
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"1rem","bottom":"4rem"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"1rem","bottom":"4rem"},"blockGap":"2.5rem"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:1rem;padding-bottom:4rem">
-<!-- wp:columns -->
-<div class="wp-block-columns">
-<!-- wp:column -->
-<div class="wp-block-column">
+
+<!-- LIGNE 1 — photo à gauche -->
+<!-- wp:media-text {"align":"wide","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="À la Crochardière"/></figure><div class="wp-block-media-text__content">
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">À la Crochardière</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>La propriété est aménagée pour votre confort : piscine couverte, jeux d'intérieur et d'extérieur, grand jardin… <a href="/a-la-crochardiere/">Plus d'informations</a></p>
+<p>La propriété est aménagée pour votre confort : piscine couverte chauffée, jeux d'intérieur et d'extérieur, grand jardin arboré…</p>
 <!-- /wp:paragraph -->
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Plages et activités maritimes</h3>
-<!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>De belles plages de sable sont accessibles en 30 minutes. <a href="/explore/">Plus d'informations</a></p>
+<p><a href="/a-la-crochardiere/">Plus d'informations →</a></p>
 <!-- /wp:paragraph -->
-</div>
-<!-- /wp:column -->
-<!-- wp:column -->
-<div class="wp-block-column">
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- LIGNE 2 — photo à droite -->
+<!-- wp:media-text {"align":"wide","mediaPosition":"right","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Le Mont-Saint-Michel"/></figure><div class="wp-block-media-text__content">
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Le Mont-Saint-Michel</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Lieu incontournable du patrimoine français, le Mont vous attend à 30 minutes. <a href="/explore/">Plus d'informations</a></p>
+<p>Lieu incontournable du patrimoine français, le Mont vous attend à 30 minutes de la propriété.</p>
 <!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/explore/">Plus d'informations →</a></p>
+<!-- /wp:paragraph -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- LIGNE 3 — photo à gauche -->
+<!-- wp:media-text {"align":"wide","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Plages et activités maritimes"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Plages et activités maritimes</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>De belles plages de sable sont accessibles en 30 minutes : baignade, char à voile, balades côtières…</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/explore/">Plus d'informations →</a></p>
+<!-- /wp:paragraph -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- LIGNE 4 — photo à droite -->
+<!-- wp:media-text {"align":"wide","mediaPosition":"right","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Sites et balades d'exception"/></figure><div class="wp-block-media-text__content">
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Sites et balades d'exception</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Les sentiers de randonnée, dans les terres ou sur la côte, accueillent marcheurs amateurs et confirmés. <a href="/explore/">Plus d'informations</a></p>
+<p>Les sentiers de randonnée, dans les terres ou sur la côte, accueillent marcheurs amateurs et confirmés.</p>
 <!-- /wp:paragraph -->
-</div>
-<!-- /wp:column -->
-</div>
-<!-- /wp:columns -->
+<!-- wp:paragraph -->
+<p><a href="/explore/">Plus d'informations →</a></p>
+<!-- /wp:paragraph -->
+</div></div>
+<!-- /wp:media-text -->
+
 </div>
 <!-- /wp:group -->
 
