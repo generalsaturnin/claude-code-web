@@ -25,6 +25,17 @@ add_action( 'wp_enqueue_scripts', function () {
 }, 100 );
 
 /**
+ * Masquer le titre sur TOUTES les pages (pas les articles ni les archives).
+ * Le titre est retiré de la sortie (pas seulement caché en CSS).
+ */
+add_filter( 'generate_show_title', function ( $show ) {
+    if ( is_page() ) {
+        return false;
+    }
+    return $show;
+} );
+
+/**
  * ---------------------------------------------------------------------------
  * Vos hooks / filtres personnalisés ci-dessous.
  * GeneratePress expose de nombreux hooks : https://docs.generatepress.com/article/hooks/
