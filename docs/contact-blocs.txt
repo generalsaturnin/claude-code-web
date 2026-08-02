@@ -3,98 +3,172 @@
      Nouvelle page, titre "Localisation et contact", slug: contact
      Langue Polylang = Français.
      Coller via ⋮ > Éditeur de code.
-     ⚠️ REMPLIR les placeholders : e-mail, adresse complète, texte FAQ.
-     Icônes 40px = placeholders (lc-icon).
+     Contenu réel intégré. Icônes 40/25px = placeholders (lc-icon).
      ============================================================ -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"1.5rem"}}},"layout":{"type":"constrained","contentSize":"820px"}} -->
-<div class="wp-block-group alignfull" style="padding-top:3.5rem;padding-bottom:1.5rem">
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"1rem"}}},"layout":{"type":"constrained","contentSize":"820px"}} -->
+<div class="wp-block-group alignfull" style="padding-top:3.5rem;padding-bottom:1rem">
 <!-- wp:heading {"textAlign":"center"} -->
 <h2 class="wp-block-heading has-text-align-center">Localisation et contact</h2>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Une question, un renseignement, votre itinéraire ? Nous sommes à votre écoute.</p>
+<p class="has-text-align-center">Venir à la Crochardière est facile. Suivez les indications ci-dessous.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"1rem","bottom":"3.5rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:1rem;padding-bottom:3.5rem">
-<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"2rem","left":"2.5rem"}}}} -->
+<!-- 3 TUILES -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"1rem","bottom":"3rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:1rem;padding-bottom:3rem">
+<!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide">
-
 <!-- wp:column -->
 <div class="wp-block-column">
 <!-- wp:image {"width":"40px","height":"40px","align":"center","className":"lc-icon"} -->
-<figure class="wp-block-image aligncenter is-resized lc-icon"><img alt="icône — Carte et directions" style="object-fit:contain;width:40px;height:40px"/></figure>
+<figure class="wp-block-image aligncenter is-resized lc-icon"><img alt="icône — Cartes et directions" style="object-fit:contain;width:40px;height:40px"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"textAlign":"center","level":3} -->
-<h3 class="wp-block-heading has-text-align-center">Cartes et directions</h3>
+<h3 class="wp-block-heading has-text-align-center"><a href="#localisation">Cartes &amp; directions</a></h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">À Dol-de-Bretagne (Ille-et-Vilaine), à 25 min du Mont-Saint-Michel et 20 min de Saint-Malo.<br><a href="#localisation">Voir sur la carte →</a></p>
+<p class="has-text-align-center">Comment venir jusque chez nous ?</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
-
 <!-- wp:column -->
 <div class="wp-block-column">
 <!-- wp:image {"width":"40px","height":"40px","align":"center","className":"lc-icon"} -->
 <figure class="wp-block-image aligncenter is-resized lc-icon"><img alt="icône — Nous contacter" style="object-fit:contain;width:40px;height:40px"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"textAlign":"center","level":3} -->
-<h3 class="wp-block-heading has-text-align-center">Nous contacter</h3>
+<h3 class="wp-block-heading has-text-align-center"><a href="#contact">Nous contacter</a></h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Téléphone : <a href="tel:+33650427156">06 50 42 71 56</a><br>E-mail : <a href="mailto:VOTRE-EMAIL@la-crochardiere.fr">VOTRE-EMAIL@la-crochardiere.fr</a></p>
+<p class="has-text-align-center">Téléphone, e-mail ou formulaire de contact</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
-
 <!-- wp:column -->
 <div class="wp-block-column">
 <!-- wp:image {"width":"40px","height":"40px","align":"center","className":"lc-icon"} -->
 <figure class="wp-block-image aligncenter is-resized lc-icon"><img alt="icône — FAQ" style="object-fit:contain;width:40px;height:40px"/></figure>
 <!-- /wp:image -->
 <!-- wp:heading {"textAlign":"center","level":3} -->
-<h3 class="wp-block-heading has-text-align-center">FAQ</h3>
+<h3 class="wp-block-heading has-text-align-center"><a href="#faq">FAQ</a></h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Questions fréquentes (arrivée, animaux, piscine…). <br>[Texte FAQ ou lien à compléter]</p>
+<p class="has-text-align-center">Quelques réponses rapides</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
-
 </div>
 <!-- /wp:columns -->
 </div>
 <!-- /wp:group -->
 
-<!-- SECTION "Notre localisation" : adresse en surimpression sur un fond de carte.
-     Sélectionnez le bloc Couverture ci-dessous et définissez en IMAGE DE FOND
-     une capture de carte (ou remplacez tout le bloc par la carte interactive,
-     voir le bloc HTML commenté en bas). -->
-<!-- wp:cover {"customOverlayColor":"#2b2b2b","dimRatio":35,"minHeightUnit":"px","minHeight":460,"anchor":"localisation","align":"full","layout":{"type":"constrained"}} -->
-<div id="localisation" class="wp-block-cover alignfull" style="min-height:460px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-35 has-background-dim" style="background-color:#2b2b2b"></span><div class="wp-block-cover__inner-container">
+<!-- NOTRE LOCALISATION : adresse en surimpression sur un fond de carte.
+     Sélectionnez le bloc Couverture et mettez en IMAGE DE FOND une capture de carte,
+     ou remplacez-le par la carte interactive (bloc HTML commenté en bas). -->
+<!-- wp:cover {"customOverlayColor":"#2b2b2b","dimRatio":30,"minHeightUnit":"px","minHeight":480,"anchor":"localisation","align":"full","layout":{"type":"constrained","contentSize":"1100px","justifyContent":"left"}} -->
+<div id="localisation" class="wp-block-cover alignfull" style="min-height:480px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim" style="background-color:#2b2b2b"></span><div class="wp-block-cover__inner-container">
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"2rem","right":"2rem"}},"color":{"background":"#ffffff"},"border":{"radius":"8px"}},"layout":{"type":"constrained","contentSize":"420px"}} -->
 <div class="wp-block-group has-background" style="border-radius:8px;background-color:#ffffff;padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem">
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Notre localisation</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Le Manoir de la Crochardière<br>[Adresse complète]<br>35120 Dol-de-Bretagne</p>
+<p>98 chemin de la Crochardière<br>35120 Dol-de-Bretagne</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="tel:+33650427156">06 50 42 71 56</a><br><a href="https://www.google.com/maps/search/?api=1&query=La+Crochardi%C3%A8re+Dol-de-Bretagne" target="_blank" rel="noopener">Itinéraire →</a></p>
+<p><strong>Arrivées :</strong> 17 h · <strong>Départs :</strong> 10 h</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="tel:+33650427156">06 50 42 71 56</a><br><a href="mailto:contact@la-crochardiere.fr">contact@la-crochardiere.fr</a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="https://www.google.com/maps/place/La+Crochardi%C3%A8re/@48.543549,-1.7741737,17z" target="_blank" rel="noopener">Itinéraire →</a></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 </div></div>
 <!-- /wp:cover -->
 
-<!-- OPTION carte interactive (OpenStreetMap) : si vous préférez une vraie carte
-     cliquable plutôt qu'un fond image, ajoutez un bloc HTML personnalisé avec :
-     <iframe title="Carte" width="100%" height="420" style="border:0"
-       loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-       src="https://www.openstreetmap.org/export/embed.html?bbox=-1.76,48.53,-1.70,48.56&layer=mapnik&marker=48.5487,-1.7300"></iframe>
-     (ajustez bbox/marker à vos coordonnées exactes) -->
+<!-- OPTION carte interactive (sans clé API) : remplacez le bloc Couverture ci-dessus,
+     ou ajoutez sous celui-ci un bloc HTML personnalisé avec :
+     <iframe title="Carte" width="100%" height="420" style="border:0" loading="lazy"
+       src="https://maps.google.com/maps?q=48.543549,-1.7741737&z=15&output=embed"></iframe> -->
+
+<!-- NOUS CONTACTER -->
+<!-- wp:group {"align":"full","anchor":"contact","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"3.5rem"}},"color":{"background":"#f5f3ee"}},"layout":{"type":"constrained"}} -->
+<div id="contact" class="wp-block-group alignfull has-background" style="background-color:#f5f3ee;padding-top:3.5rem;padding-bottom:3.5rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Nous contacter</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Par téléphone, e-mail, ou via le formulaire.</p>
+<!-- /wp:paragraph -->
+<!-- wp:columns {"align":"wide","verticalAlignment":"top"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-top">
+<!-- wp:column {"verticalAlignment":"top","width":"40%"} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:40%">
+<!-- wp:paragraph -->
+<p><strong>Nous appeler</strong><br><a href="tel:+33650427156">06 50 42 71 56</a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>Nous écrire</strong><br><a href="mailto:contact@la-crochardiere.fr">contact@la-crochardiere.fr</a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>Passer nous voir</strong><br>98 chemin de la Crochardière<br>35120 Dol-de-Bretagne</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column {"verticalAlignment":"top","width":"60%"} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:60%">
+<!-- wp:shortcode -->
+[formidable id=3]
+<!-- /wp:shortcode -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- FAQ -->
+<!-- wp:group {"align":"full","anchor":"faq","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"3.5rem"}}},"layout":{"type":"constrained","contentSize":"780px"}} -->
+<div id="faq" class="wp-block-group alignfull" style="padding-top:3.5rem;padding-bottom:3.5rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Quelques réponses rapides</h2>
+<!-- /wp:heading -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Est-ce que la propriété est loin du centre-ville ?</summary>
+<!-- wp:paragraph -->
+<p>Comptez 1,5 km jusqu'au centre de Dol-de-Bretagne, soit 20 bonnes minutes à pied, 7 minutes à vélo (mis à disposition) ou 4 minutes en voiture.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Quels sont les horaires d'arrivée et de départ ?</summary>
+<!-- wp:paragraph -->
+<p>Les arrivées se font à partir de 17 h et les départs jusqu'à 10 h. N'hésitez pas à nous contacter pour toute demande particulière.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Pourrai-je recharger ma voiture électrique ?</summary>
+<!-- wp:paragraph -->
+<p>Oui, nous disposons d'une borne de recharge.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+</div>
+<!-- /wp:group -->
+
+<!-- LOGO GÎTES DE FRANCE -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"1rem","bottom":"3.5rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:1rem;padding-bottom:3.5rem">
+<!-- wp:image {"width":"120px","align":"center","className":"lc-gdf"} -->
+<figure class="wp-block-image aligncenter is-resized lc-gdf"><a href="https://www.gitesdefrance35.com/fiche-hebergement-35G12067.html"><img src="https://test.la-crochardiere.fr/wp-content/uploads/2023/08/05LogoGITESDEFRANCE100x100mm3CouleursRVB-1552481853-150x150.jpg" alt="Gîtes de France 35" style="width:120px"/></a></figure>
+<!-- /wp:image -->
+</div>
+<!-- /wp:group -->
