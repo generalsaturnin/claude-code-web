@@ -22,3 +22,24 @@ Text Domain:  lacrochardiere
 
 /* Exemple de surcharge douce, à adapter à votre charte : */
 /* .site-content { max-width: var(--lc-max-width); } */
+
+/* =========================================================================
+   Grille "région" de l'accueil (blocs Média & texte)
+   -> hauteur de ligne identique + photos en couverture (object-fit: cover)
+   ========================================================================= */
+.lc-region .wp-block-media-text {
+    min-height: 340px;              /* hauteur commune des lignes — à ajuster */
+}
+.lc-region .wp-block-media-text__media {
+    height: 100%;
+}
+.lc-region .wp-block-media-text__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;              /* la photo remplit la colonne sans se déformer */
+}
+@media (max-width: 781px) {
+    /* sur mobile, chaque ligne s'empile : on relâche la hauteur fixe */
+    .lc-region .wp-block-media-text { min-height: 0; }
+    .lc-region .wp-block-media-text__media img { height: auto; }
+}

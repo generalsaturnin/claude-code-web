@@ -1,0 +1,239 @@
+<!-- ============================================================
+     HOME PAGE (EN) — Gutenberg block markup
+     Usage:
+     1. New page (Pages > Add New), title "Home".
+     2. Panel on the right: Language (Polylang) = English,
+        and link it as the translation of the FR "Accueil".
+     3. Menu ⋮ > "Code editor" (Ctrl+Shift+Alt+M) > paste all this.
+     4. Back to "Visual editor".
+     5. Fill each empty image from the MEDIA LIBRARY.
+     6. Check the button links (EN page slugs).
+     ============================================================ -->
+
+<!-- wp:cover {"customOverlayColor":"#3a4a3a","dimRatio":45,"minHeight":74,"minHeightUnit":"vh","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull" style="min-height:74vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-45 has-background-dim" style="background-color:#3a4a3a"></span><div class="wp-block-cover__inner-container">
+<!-- wp:heading {"textAlign":"center","level":1,"textColor":"white"} -->
+<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">Le Manoir de la Crochardière</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","textColor":"white"} -->
+<p class="has-text-align-center has-white-color has-text-color">Guest house &amp; self-catering cottage in the bay of Mont-Saint-Michel</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#accommodation">See our accommodation</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#contact">Contact us</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div></div>
+<!-- /wp:cover -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"4rem","bottom":"3rem"}}},"layout":{"type":"constrained","contentSize":"820px"}} -->
+<div class="wp-block-group alignfull" style="padding-top:4rem;padding-bottom:3rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Holidays in the bay of Mont-Saint-Michel</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>We welcome you in a self-catering cottage (holiday rental) rated Gîtes de France 3 ears of corn, sleeping up to 5 people in 65 m² with a private garden, or in our 2 charming guest rooms, also rated 3 ears of corn.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Around the house, our guests relax in the indoor heated swimming pool (open from April to early November), over a game of American pool, darts or table football… or chatting with our cats and hens!</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>We are in Dol-de-Bretagne, in Ille-et-Vilaine — a small medieval town 20 minutes from Saint-Malo, Cancale, Dinard and Dinan, and 25 minutes from Mont-Saint-Michel. Plenty of information and our own tips for restaurants and visits around our lovely corner of Brittany — not as rainy as they say, but very warm-hearted.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:gallery {"columns":3,"linkTo":"none","align":"wide"} -->
+<figure class="wp-block-gallery has-nested-images columns-3 is-cropped alignwide">
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img alt="The property"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img alt="The garden"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img alt="The indoor heated pool"/></figure>
+<!-- /wp:image -->
+</figure>
+<!-- /wp:gallery -->
+
+<!-- wp:group {"align":"full","anchor":"accommodation","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"3.5rem"}},"color":{"background":"#f5f3ee"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#f5f3ee;padding-top:3.5rem;padding-bottom:3.5rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Our accommodation</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Different options for short and long stays, for family holidays or romantic weekends.</p>
+<!-- /wp:paragraph -->
+<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"2rem","left":"2rem"}}}} -->
+<div class="wp-block-columns">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"sizeSlug":"large","style":{"border":{"radius":"6px"}}} -->
+<figure class="wp-block-image size-large has-custom-border"><img alt="The Crochardière cottage" style="border-radius:6px"/></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">The Crochardière cottage</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>A comfortable cottage adjoining the restored 18th-century manor, with a private enclosed outdoor area (terrace, garden furniture, barbecue). On one level: a living space with kitchen and lounge, a bedroom (160×200 bed), a bedroom with bunk beds and a 90 bed, a bathroom.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><strong>5 guests · 2 bedrooms · Private garden &amp; terrace · Wi-Fi</strong><br>From €380 / week</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/the-cottage/">Discover</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"sizeSlug":"large","style":{"border":{"radius":"6px"}}} -->
+<figure class="wp-block-image size-large has-custom-border"><img alt="Guest room Keeper's house" style="border-radius:6px"/></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Guest room — Keeper's house</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>On the ground floor of an outbuilding, with an independent entrance: double room (160 bed), shower room with WC, television and a private terrace in the manor courtyard. Access to the indoor heated pool.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><strong>2 guests · 1 bedroom · Private terrace</strong><br>From €95 / night</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/keepers-house/">Discover</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"sizeSlug":"large","style":{"border":{"radius":"6px"}}} -->
+<figure class="wp-block-image size-large has-custom-border"><img alt="Guest room Ocean of greenery" style="border-radius:6px"/></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Guest room — Océan de verdure</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>On the ground floor of an outbuilding, with an independent entrance: a family suite with one bedroom (160 bed) and its small lounge (TV), an adjoining room (two 90 beds), a shower room, separate WC and a private covered terrace opening onto the garden.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><strong>4 guests · 2 bedrooms · Private terrace</strong><br>From €95 / night</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/ocean-de-verdure-en/">Discover</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"4rem","bottom":"3rem"}}},"layout":{"type":"constrained","contentSize":"820px"}} -->
+<div class="wp-block-group alignfull" style="padding-top:4rem;padding-bottom:3rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">A region full of interest</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>The Crochardière manor is located in <a href="https://dol-de-bretagne.fr" target="_blank" rel="noopener">Dol-de-Bretagne</a>, at the gateway to Brittany, in the bay of Mont-Saint-Michel, close to Cancale, Saint-Malo and Combourg. Walks, historic sites, beaches and water sports, sand yachting… there is plenty to do.</p>
+<!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=b2-6etM8Syg","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=b2-6etM8Syg
+</div></figure>
+<!-- /wp:embed -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"lc-region","style":{"spacing":{"padding":{"top":"1rem","bottom":"4rem"},"blockGap":"2.5rem"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull lc-region" style="padding-top:1rem;padding-bottom:4rem">
+
+<!-- ROW 1 — image left -->
+<!-- wp:media-text {"align":"wide","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="At la Crochardière"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">At la Crochardière</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>The property is set up for your comfort: indoor heated pool, indoor and outdoor games, a large leafy garden…</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/the-property/">Learn more →</a></p>
+<!-- /wp:paragraph -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- ROW 2 — image right -->
+<!-- wp:media-text {"align":"wide","mediaPosition":"right","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Mont-Saint-Michel"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Mont-Saint-Michel</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>A must-see of French heritage, the Mont awaits you just 30 minutes from the property.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/explore-the-region/">Learn more →</a></p>
+<!-- /wp:paragraph -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- ROW 3 — image left -->
+<!-- wp:media-text {"align":"wide","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Beaches and water activities"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Beaches and water activities</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Beautiful sandy beaches are within 30 minutes: swimming, sand yachting, coastal walks…</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/explore-the-region/">Learn more →</a></p>
+<!-- /wp:paragraph -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- ROW 4 — image right -->
+<!-- wp:media-text {"align":"wide","mediaPosition":"right","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Outstanding sites and walks"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Outstanding sites and walks</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>The hiking trails, inland or along the coast, welcome both casual and experienced walkers.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/explore-the-region/">Learn more →</a></p>
+<!-- /wp:paragraph -->
+</div></div>
+<!-- /wp:media-text -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","anchor":"contact","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"3.5rem"}},"color":{"background":"#f5f3ee"}},"layout":{"type":"constrained","contentSize":"680px"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#f5f3ee;padding-top:3.5rem;padding-bottom:3.5rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Any questions?</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Drop us a line, we'll reply quickly.</p>
+<!-- /wp:paragraph -->
+<!-- wp:shortcode -->
+[formidable id=2]
+<!-- /wp:shortcode -->
+</div>
+<!-- /wp:group -->
