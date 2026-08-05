@@ -173,3 +173,32 @@ installé comme thème enfant, embarquant la backdoor `lock360.php`.
 3. `define('DISALLOW_FILE_EDIT', true);` dans `wp-config.php`.
 4. Installer Wordfence + lancer un scan complet (confirmation indépendante).
 5. Mises à jour régulières ; ne plus jamais installer de thème/extension *nulled*.
+
+---
+
+## 8. Clôture — durcissement & migration (août 2026)
+
+Installation unique confirmée : **production `www.la-crochardiere.fr`** (les URLs
+`test.` vues dans le HTML étaient des restes d'un import Duplicator, pas une 2ᵉ install).
+
+### Durcissement appliqué (prod)
+- Bloc PHP interdit dans `wp-content/uploads/` (`.htaccess` sain reposé).
+- `.htaccess` racine durci : compression, cache navigateur, en-têtes de sécurité,
+  protection de `wp-config.php`.
+- `wp-config.php` : `DISALLOW_FILE_EDIT` = true, `WP_DEBUG` = false.
+- WordPress core + extensions à jour + **mises à jour automatiques** activées.
+- **Wordfence** : pare-feu (mode étendu) + **2FA** sur le compte admin + scans planifiés.
+- **Sauvegardes automatiques** mises en place (le site n'en avait aucune au départ).
+- Scan Wordfence complet : **aucune menace**.
+
+### Réduction de surface (migration)
+- Retrait d'Elementor, du thème Bellevue (`bellevuex`) et de MotoPress Hotel Booking,
+  ainsi que d'Aloha PowerPack, Kirki, Envato Market, mphb-styles, connect-polylang-elementor.
+- Passage au thème léger **GeneratePress** + thème enfant `lacrochardiere` + GenerateBlocks,
+  contenu reconstruit en **blocs natifs** (plus de page builder).
+
+### Reste (hygiène, non-sécurité)
+- `search-replace 'test.la-crochardiere.fr' → 'www.la-crochardiere.fr'` (URLs résiduelles).
+- Reconstruction des pages **EN** en blocs (traduction depuis le FR).
+
+**Statut : incident clos, site assaini et durci.**
