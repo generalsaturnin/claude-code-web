@@ -1,0 +1,96 @@
+<!-- ============================================================
+     PAGE "Explore the region" (EN) — Gutenberg block markup
+     2-column grid (photo | text) x 6 rows, "At la Crochardière" style.
+     New page, title "Explore the region", slug: explore-the-region
+     Polylang language = English, link as translation of FR "Explorer la région".
+     Paste via ⋮ > Code editor, then fill the 6 photos.
+     ============================================================ -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3.5rem","bottom":"1.5rem"}}},"layout":{"type":"constrained","contentSize":"820px"}} -->
+<div class="wp-block-group alignfull" style="padding-top:3.5rem;padding-bottom:1.5rem">
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Explore the region</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">A (non-exhaustive) list of things to do around la Crochardière.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"lc-region","style":{"spacing":{"padding":{"top":"1rem","bottom":"4rem"},"blockGap":"2.5rem"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull lc-region" style="padding-top:1rem;padding-bottom:4rem">
+
+<!-- ROW 1 — image left -->
+<!-- wp:media-text {"align":"wide","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Nature and landscapes"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Nature and landscapes</h3>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item --><li>Hiking the GR34 coastal path</li><!-- /wp:list-item --><!-- wp:list-item --><li>Pointe du Grouin</li><!-- /wp:list-item --><!-- wp:list-item --><li>Champ-Dolent menhir</li><!-- /wp:list-item --><!-- wp:list-item --><li>The Rance valley</li><!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- ROW 2 — image right -->
+<!-- wp:media-text {"align":"wide","mediaPosition":"right","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="In town"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">In town</h3>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item --><li>Dol-de-Bretagne</li><!-- /wp:list-item --><!-- wp:list-item --><li>Saint-Malo</li><!-- /wp:list-item --><!-- wp:list-item --><li>Dinard</li><!-- /wp:list-item --><!-- wp:list-item --><li>Dinan</li><!-- /wp:list-item --><!-- wp:list-item --><li>Cancale</li><!-- /wp:list-item --><!-- wp:list-item --><li>Combourg</li><!-- /wp:list-item --><!-- wp:list-item --><li>Rennes</li><!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- ROW 3 — image left -->
+<!-- wp:media-text {"align":"wide","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Remarkable sites"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Remarkable sites</h3>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item --><li>Mont-Saint-Michel</li><!-- /wp:list-item --><!-- wp:list-item --><li>Saint-Malo's walled old town and ramparts</li><!-- /wp:list-item --><!-- wp:list-item --><li>Dinan castle</li><!-- /wp:list-item --><!-- wp:list-item --><li>Combourg castle</li><!-- /wp:list-item --><!-- wp:list-item --><li>Saint-Samson cathedral in Dol</li><!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- ROW 4 — image right -->
+<!-- wp:media-text {"align":"wide","mediaPosition":"right","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Outdoor activities"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Outdoor activities</h3>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item --><li>Sand yachting</li><!-- /wp:list-item --><!-- wp:list-item --><li>Canoeing and other water sports</li><!-- /wp:list-item --><!-- wp:list-item --><li>Treetop adventure course</li><!-- /wp:list-item --><!-- wp:list-item --><li>Karting</li><!-- /wp:list-item --><!-- wp:list-item --><li>Villecartier forest</li><!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- ROW 5 — image left -->
+<!-- wp:media-text {"align":"wide","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Indoors"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Indoors</h3>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item --><li>Saint-Malo aquarium</li><!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+</div></div>
+<!-- /wp:media-text -->
+
+<!-- ROW 6 — image right -->
+<!-- wp:media-text {"align":"wide","mediaPosition":"right","mediaType":"image","mediaWidth":50,"verticalAlignment":"center"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center"><figure class="wp-block-media-text__media"><img alt="Dining"/></figure><div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Dining</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Plenty of restaurants, simple or more refined, open depending on the season. Just ask us — we've tried a few!</p>
+<!-- /wp:paragraph -->
+</div></div>
+<!-- /wp:media-text -->
+
+</div>
+<!-- /wp:group -->

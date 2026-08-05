@@ -132,7 +132,7 @@
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/ocean-de-verdure-en/">Discover</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/ocean-de-verdure/">Discover</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 </div>
@@ -171,7 +171,7 @@ https://www.youtube.com/watch?v=b2-6etM8Syg
 <p>The property is set up for your comfort: indoor heated pool, indoor and outdoor games, a large leafy garden…</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="/the-property/">Learn more →</a></p>
+<p><a href="/at-la-crochardiere/">Learn more →</a></p>
 <!-- /wp:paragraph -->
 </div></div>
 <!-- /wp:media-text -->
@@ -233,7 +233,7 @@ https://www.youtube.com/watch?v=b2-6etM8Syg
 <p class="has-text-align-center">Drop us a line, we'll reply quickly.</p>
 <!-- /wp:paragraph -->
 <!-- wp:shortcode -->
-[formidable id=2]
+[formidable id=3]
 <!-- /wp:shortcode -->
 </div>
 <!-- /wp:group -->
